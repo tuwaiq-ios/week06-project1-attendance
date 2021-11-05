@@ -1,9 +1,9 @@
-# week06-project1-attendance
+# Week06 Project1: Attendance
 
 ## Description
 Attendance is an app for teachers that want to take attendances in their classes using their phones. It is a powerful and portable way to gather and record student attendance. It provides a simple and intuitive interface that allows teachers and instructors to easily capture and archive attendance based records.
 
-### Features you must have:
+## Features you must have:
 1. Teacher should be able to add students into the student list 
 2. Teacher should be able to mark the student's attendance per day 
 3. Number of present student should be dispalyed in every attendance list 
