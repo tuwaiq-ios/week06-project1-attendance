@@ -1,40 +1,27 @@
+//
+//  File.swift
+//  Attendess2
+//
+//  Created by Amal on 29/03/1443 AH.
+//
 
-//
-//  AppDelegate.swift
-//  attendence
-//
-//  Created by Amal on 28/03/1443 AH.
-//
 import UIKit
 
-class Tas: NSObject {
 
-    var title: String
-    var deadline: String
-    var done: Bool
+class Days: NSObject {
+  var date: String
 
-    init(title:String, deadline:String,done:Bool) {
-        self.title = title
-        self.deadline = deadline
-        self.done =  done
-    }
-}
-class Lis: NSObject {
-
-    var name: String
-    var date: String
-    var tasks: [Tas]
-
-    init(name:String, date:String,  tasks: [Tas]) {
-        self.name = name
+    init( date:String) {
         self.date = date
-        self.tasks = tasks
     }
 }
 
-var data = [Lis]()
-class EntryViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-    var t1:List?
+var data = [Days]()
+
+
+class DaysPage: UIViewController, UITableViewDelegate,UITableViewDataSource {
+
+    var t1:StudentList?
     
     let label1: UILabel = {
         let label = UILabel()
@@ -44,10 +31,12 @@ class EntryViewController: UIViewController, UITableViewDelegate,UITableViewData
 
         return label
       }()
-
+   
+    
     var dateFormatter: DateFormatter = DateFormatter()
- 
-    var data = [Lis]()
+    
+    
+    var data = [Days]()
     
     let tabelView = UITableView()
     
@@ -73,7 +62,7 @@ class EntryViewController: UIViewController, UITableViewDelegate,UITableViewData
         tabelView.delegate = self
         tabelView.dataSource = self
         view.addSubview(label1)
-        tabelView.reloadData()
+  
       }
 
     @objc func deleteAll(){
@@ -84,7 +73,7 @@ class EntryViewController: UIViewController, UITableViewDelegate,UITableViewData
    {
  
       let shareAction = UITableViewRowAction(style: .default, title: "Delete" , handler: { (action:UITableViewRowAction, indexPath: IndexPath) -> Void in
-      let deleteMenu = UIAlertController(title: nil, message: "Are you sure you want to delete this task using", preferredStyle: .actionSheet)
+      let deleteMenu = UIAlertController(title: nil, message: "Are you sure you want to delete this day", preferredStyle: .actionSheet)
               
       let deleteAction = UIAlertAction(title: "Delete", style: .destructive){ (alertAction) in
           self.data.remove(at: indexPath.row)
@@ -93,16 +82,20 @@ class EntryViewController: UIViewController, UITableViewDelegate,UITableViewData
 
       
               let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+              
           deleteMenu.addAction(deleteAction)
           deleteMenu.addAction(cancelAction)
               
       self.present(deleteMenu, animated: true, completion: nil)
       })
+   
       return [shareAction]
-   }
+  }
+
+    
     @objc func tapToAdd(){
 
-        dateFormatter.dateFormat = "MMM d, h:mm a"
+        dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
         
         let myDatePicker: UIDatePicker = UIDatePicker()
         
@@ -117,12 +110,14 @@ class EntryViewController: UIViewController, UITableViewDelegate,UITableViewData
              
                 let selectDate: String = self.dateFormatter.string(from: myDatePicker.date)
                 
-                let day = Lis(name: " ", date: selectDate, tasks: [])
+                let day = Days( date: selectDate)
                 
                     self.data.append(day)
                 
                      print(self.data)
                      print("Selected Date: \(myDatePicker.date)")
+              
+                
                  self.tabelView.reloadData()
               
             })
@@ -148,18 +143,22 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     cell.label2.text = data[indexPath.row].date
     cell.label3.text = "\(c1)"
     cell.label4.text = "\(c2)"
+    
   return cell
 }
+    
+  
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //Unhighlights what you have selected
         tableView.deselectRow(at: indexPath, animated: true)
-        let dmScreen = threeVC()
-//        dmScreen.dayl = students[indexPath.row].dayl
+        let dmScreen = AttendancePage()
+        
         dmScreen.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(dmScreen, animated: true)
       }
+    
 }
+
   class Cell: UITableViewCell {
       
       static let identifire = "cell"
@@ -170,6 +169,8 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         label.textColor = .black
         return label
       }()
+      
+    
       public let label3: UILabel = {
            let label = UILabel()
            label.text = "a"
@@ -187,6 +188,8 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 
            return label
          }()
+      
+
       override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
           super.init(style: style, reuseIdentifier: reuseIdentifier)
           contentView.backgroundColor = .white
@@ -201,11 +204,15 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
       
       override func layoutSubviews() {
           super.layoutSubviews()
+
+
           label2.frame = CGRect(x: 5,
                                 y: 5,
                                 width: 260,
                                 height: contentView.frame.size.height-10)
+// x: right-left
           label3.frame = CGRect(x: 340,
+//                                up or down
                                 y: 5,
                                 width: 70,
                                 height: contentView.frame.size.height-10)

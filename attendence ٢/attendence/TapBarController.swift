@@ -1,10 +1,9 @@
 //
-//  AppDelegate.swift
-//  attendence
+//  File.swift
+//  Attendess2
 //
-//  Created by Amal on 28/03/1443 AH.
+//  Created by Amal on 29/03/1443 AH.
 //
-
 import UIKit
 class TabBarController: UITabBarController {
  fileprivate func createNavController(for rootViewController: UIViewController,
@@ -21,8 +20,8 @@ class TabBarController: UITabBarController {
     
  func setupVCs() {
    viewControllers = [
-    createNavController(for: ViewController(), title: NSLocalizedString("Students", comment: ""), image: UIImage(systemName: "rectangle.stack.person.crop.fill")!),
-    createNavController(for: EntryViewController(), title: NSLocalizedString("Days", comment: ""), image: UIImage(systemName: "calendar")!)
+    createNavController(for: StudentPage(), title: NSLocalizedString("Students", comment: ""), image: UIImage(systemName: "person")!),
+    createNavController(for: DaysPage(), title: NSLocalizedString("Days", comment: ""), image: UIImage(systemName: "person")!)
     ]
   }
  override func viewDidLoad() {

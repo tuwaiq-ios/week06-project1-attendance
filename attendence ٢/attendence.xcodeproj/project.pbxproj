@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C975B9B02736E0460008D1FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C975B9AF2736E0460008D1FC /* GoogleService-Info.plist */; };
+		C975B9B6273727830008D1FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C975B9B5273727830008D1FC /* GoogleService-Info.plist */; };
 		D406FEA726636BAED2743150 /* Pods_attendence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B646CEC07BF3163AF39AA88F /* Pods_attendence.framework */; };
 		FA0A9AB32732600F007084C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A9AB22732600F007084C3 /* AppDelegate.swift */; };
 		FA0A9AB52732600F007084C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A9AB42732600F007084C3 /* SceneDelegate.swift */; };
 		FA0A9ABC27326011007084C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0A9ABB27326011007084C3 /* Assets.xcassets */; };
 		FA0A9ABF27326011007084C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0A9ABD27326011007084C3 /* LaunchScreen.storyboard */; };
 		FAEFE9FA2735E905005C933E /* TapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE9F92735E905005C933E /* TapBarController.swift */; };
-		FAEFE9FC2735E90F005C933E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE9FB2735E90F005C933E /* ViewController.swift */; };
-		FAEFE9FE2735E917005C933E /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE9FD2735E917005C933E /* EntryViewController.swift */; };
-		FAEFEA002735E920005C933E /* threeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE9FF2735E920005C933E /* threeVC.swift */; };
+		FAEFE9FC2735E90F005C933E /* StudentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE9FB2735E90F005C933E /* StudentPage.swift */; };
+		FAEFE9FE2735E917005C933E /* DaysPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE9FD2735E917005C933E /* DaysPage.swift */; };
+		FAEFEA002735E920005C933E /* AttendancePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFE9FF2735E920005C933E /* AttendancePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86F3C1F68E2F413F8A104DB3 /* Pods-attendence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-attendence.debug.xcconfig"; path = "Target Support Files/Pods-attendence/Pods-attendence.debug.xcconfig"; sourceTree = "<group>"; };
 		B646CEC07BF3163AF39AA88F /* Pods_attendence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_attendence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C975B9AF2736E0460008D1FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C975B9B5273727830008D1FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D37549E4FAC8E3E8843A5BA9 /* Pods-attendence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-attendence.release.xcconfig"; path = "Target Support Files/Pods-attendence/Pods-attendence.release.xcconfig"; sourceTree = "<group>"; };
 		FA0A9AAF2732600F007084C3 /* attendence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = attendence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0A9AB22732600F007084C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +31,9 @@
 		FA0A9ABE27326011007084C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA0A9AC027326011007084C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAEFE9F92735E905005C933E /* TapBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapBarController.swift; sourceTree = "<group>"; };
-		FAEFE9FB2735E90F005C933E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAEFE9FD2735E917005C933E /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		FAEFE9FF2735E920005C933E /* threeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = threeVC.swift; sourceTree = "<group>"; };
+		FAEFE9FB2735E90F005C933E /* StudentPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentPage.swift; sourceTree = "<group>"; };
+		FAEFE9FD2735E917005C933E /* DaysPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysPage.swift; sourceTree = "<group>"; };
+		FAEFE9FF2735E920005C933E /* AttendancePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendancePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +89,12 @@
 				FA0A9AB22732600F007084C3 /* AppDelegate.swift */,
 				FA0A9AB42732600F007084C3 /* SceneDelegate.swift */,
 				FAEFE9F92735E905005C933E /* TapBarController.swift */,
-				FAEFE9FB2735E90F005C933E /* ViewController.swift */,
-				FAEFE9FD2735E917005C933E /* EntryViewController.swift */,
-				FAEFE9FF2735E920005C933E /* threeVC.swift */,
-				C975B9AF2736E0460008D1FC /* GoogleService-Info.plist */,
+				FAEFE9FB2735E90F005C933E /* StudentPage.swift */,
+				FAEFE9FD2735E917005C933E /* DaysPage.swift */,
+				FAEFE9FF2735E920005C933E /* AttendancePage.swift */,
 				FA0A9ABB27326011007084C3 /* Assets.xcassets */,
 				FA0A9ABD27326011007084C3 /* LaunchScreen.storyboard */,
+				C975B9B5273727830008D1FC /* GoogleService-Info.plist */,
 				FA0A9AC027326011007084C3 /* Info.plist */,
 			);
 			path = attendence;
@@ -162,7 +162,7 @@
 			files = (
 				FA0A9ABF27326011007084C3 /* LaunchScreen.storyboard in Resources */,
 				FA0A9ABC27326011007084C3 /* Assets.xcassets in Resources */,
-				C975B9B02736E0460008D1FC /* GoogleService-Info.plist in Resources */,
+				C975B9B6273727830008D1FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,10 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0A9AB32732600F007084C3 /* AppDelegate.swift in Sources */,
-				FAEFE9FE2735E917005C933E /* EntryViewController.swift in Sources */,
+				FAEFE9FE2735E917005C933E /* DaysPage.swift in Sources */,
 				FAEFE9FA2735E905005C933E /* TapBarController.swift in Sources */,
-				FAEFEA002735E920005C933E /* threeVC.swift in Sources */,
-				FAEFE9FC2735E90F005C933E /* ViewController.swift in Sources */,
+				FAEFEA002735E920005C933E /* AttendancePage.swift in Sources */,
+				FAEFE9FC2735E90F005C933E /* StudentPage.swift in Sources */,
 				FA0A9AB52732600F007084C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,36 +1,38 @@
 //
-//  AppDelegate.swift
-//  attendence
+//  File.swift
+//  Attendess2
 //
-//  Created by Amal on 28/03/1443 AH.
+//  Created by Amal on 29/03/1443 AH.
 //
+
 import UIKit
 import FirebaseFirestore
+
 public struct Student {
     let id: String
     let name: String
     var attendance: Bool
-    var dayl : String
 }
-    var students = [Student]()
-    var b1 = " \(students.filter({ Student in Student.attendance}).count)"
-    var c1 = b1
-    var b2 =  " \(students.filter({ Student in !Student.attendance}).count)"
-    var c2 = b2
+var students = [Student]()
 
+var b1 = " \(students.filter({ Student in Student.attendance}).count)"
+var c1 = b1
+var b2 =  " \(students.filter({ Student in !Student.attendance}).count)"
+var c2 = b2
 
-var t:Lis?
-class threeVC: UIViewController,
+var t:Days?
+class AttendancePage: UIViewController,
                UITableViewDelegate,
                UITableViewDataSource {
     
-    var data = [Lis]()
+//    var t:Lis?
+    var data = [Days]()
     let tv = UITableView()
     
     var students = [Student]()
     
     
-    var dayl: UILabel = {
+    let dayl: UILabel = {
         let label = UILabel()
        label.text = "3 Nov"
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
@@ -41,11 +43,19 @@ class threeVC: UIViewController,
     
     let attandanceLabel = UILabel()
     let attandanceLabel2 = UILabel()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "date"
+        
+       
+        
+        self.title = "Attendance Page"
+    
 
+//        self.title = t?.date
+        
+
+      
         tv.delegate = self
         tv.dataSource = self
         tv.translatesAutoresizingMaskIntoConstraints = false
@@ -58,6 +68,9 @@ class threeVC: UIViewController,
             tv.leftAnchor.constraint(equalTo: view.leftAnchor),
             tv.rightAnchor.constraint(equalTo: view.rightAnchor),
         ])
+        
+        
+        
         view.addSubview(dayl)
         dayl.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -65,6 +78,8 @@ class threeVC: UIViewController,
             dayl.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 180),
             dayl.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 80),
         ])
+        
+        
         view.addSubview(attandanceLabel2)
         attandanceLabel2.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -72,6 +87,8 @@ class threeVC: UIViewController,
             attandanceLabel2.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 260),
             attandanceLabel2.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 120),
         ])
+        
+        
         view.addSubview(attandanceLabel)
         attandanceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -84,7 +101,7 @@ class threeVC: UIViewController,
         
         attandanceLabel2.text = "Apsent = \(students.filter({ Student in !Student.attendance}).count)"
         
-        tv.reloadData()
+//        tv.reloadData()
         
         Firestore.firestore().collection("students").addSnapshotListener{ snapshot, error in
             if error != nil {
@@ -97,21 +114,34 @@ class threeVC: UIViewController,
                 
                 let data = document.data()
              studentsArray.append(
-                Student( id: data["id"] as! String, name: data["name"] as! String, attendance: data["attendance"] as! Bool, dayl: "" as! String)
+                Student( id: data["id"] as! String, name: data["name"] as! String, attendance: data["attendance"] as! Bool)
+             
+             
              )
             }
             self.students = studentsArray
             self.tv.reloadData()
+            
         }
+        
+        
     }
+  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return students.count
     }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Cell3.identifire, for: indexPath) as! Cell3
+        
+        
         let student = students[indexPath.row]
+        
         cell.label5.text = student.name
+        
+    
         if student.attendance {
             cell.label6.text = "P"
         }else{
@@ -131,28 +161,42 @@ class threeVC: UIViewController,
         var b1 = "Present = \(students.filter({ Student in Student.attendance}).count)"
         var c1 = b1
         var b2 =  "Apsent = \(students.filter({ Student in !Student.attendance}).count)"
+        
         attandanceLabel.text = "\(b1)"
         attandanceLabel2.text = "\(b2)"
+        
         tableView.reloadData()
+       
     }
 }
+
 class Cell3: UITableViewCell {
+    
     static let identifire = "cell"
+    
     public let label5: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textColor = .black
-        return label
-    }()
-    public let label6: UILabel = {
-        let label = UILabel()
+        
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         label.textColor = .black
         return label
     }()
     
+    
+    public let label6: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.textColor = .black
+        //
+        return label
+    }()
+    
+    
+  
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        //        contentView.backgroundColor = .purple
+        
         contentView.addSubview(label5)
         contentView.addSubview(label6)
         
@@ -164,17 +208,21 @@ class Cell3: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        
         label5.frame = CGRect(x: 5,
                               y: 5,
                               width: 260,
                               height: contentView.frame.size.height-10)
         
         label6.frame = CGRect(x: 300,
+                              //                                up or down
                               y: 5,
                               width: 90,
                               height: contentView.frame.size.height-10)
         
     }
+    
 }
 
 
