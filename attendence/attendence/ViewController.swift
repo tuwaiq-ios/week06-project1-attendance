@@ -29,14 +29,9 @@ class List: NSObject {
         self.tasks = tasks
     }
 }
-
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-   
     var data = [List]()
-    
     let tabelView = UITableView()
-    
-//
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,9 +48,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
                                      tabelView.topAnchor.constraint(equalTo: view.topAnchor, constant: 250),
         tabelView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                       ])
-        
-        
-
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Delete All", style: .done, target: self, action: #selector(deleteAll))
         
         
@@ -74,12 +66,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
       data.removeAll()
       tabelView.reloadData()
     }
-    
-  
-//    @objc func saveStudent() {
-//        stuList.append(List(name:label2.text, tasks: []))
-//        }
-    
    @objc func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
    {
  
@@ -103,8 +89,6 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
    
       return [shareAction]
   }
-
-    
     @objc func tapToAdd(){
 
         let alert = UIAlertController(title: "New student", message: "Input the name here", preferredStyle: .alert )

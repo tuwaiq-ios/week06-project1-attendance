@@ -12,19 +12,18 @@ public struct Student {
     var attendance: Bool
     var dayl : String
 }
-var students = [Student]()
+    var students = [Student]()
+    var b1 = " \(students.filter({ Student in Student.attendance}).count)"
+    var c1 = b1
+    var b2 =  " \(students.filter({ Student in !Student.attendance}).count)"
+    var c2 = b2
 
-var b1 = " \(students.filter({ Student in Student.attendance}).count)"
-var c1 = b1
-var b2 =  " \(students.filter({ Student in !Student.attendance}).count)"
-var c2 = b2
 
 var t:Lis?
 class threeVC: UIViewController,
                UITableViewDelegate,
                UITableViewDataSource {
     
-//    var t:Lis?
     var data = [Lis]()
     let tv = UITableView()
     
@@ -45,9 +44,6 @@ class threeVC: UIViewController,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(tapToAdd))
-        
         self.title = "date"
 
         tv.delegate = self
@@ -62,9 +58,6 @@ class threeVC: UIViewController,
             tv.leftAnchor.constraint(equalTo: view.leftAnchor),
             tv.rightAnchor.constraint(equalTo: view.rightAnchor),
         ])
-        
-        
-        
         view.addSubview(dayl)
         dayl.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -72,8 +65,6 @@ class threeVC: UIViewController,
             dayl.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 180),
             dayl.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 80),
         ])
-        
-        
         view.addSubview(attandanceLabel2)
         attandanceLabel2.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -81,8 +72,6 @@ class threeVC: UIViewController,
             attandanceLabel2.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 260),
             attandanceLabel2.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 120),
         ])
-        
-        
         view.addSubview(attandanceLabel)
         attandanceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -113,30 +102,16 @@ class threeVC: UIViewController,
             }
             self.students = studentsArray
             self.tv.reloadData()
-            
         }
-        
-        
-    }
-    @objc func  tapToAdd() {
-        
-        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return students.count
     }
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Cell3.identifire, for: indexPath) as! Cell3
-        
-        
         let student = students[indexPath.row]
-        
         cell.label5.text = student.name
-        
-    
         if student.attendance {
             cell.label6.text = "P"
         }else{
@@ -178,8 +153,6 @@ class Cell3: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        
         contentView.addSubview(label5)
         contentView.addSubview(label6)
         
@@ -191,21 +164,17 @@ class Cell3: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        
         label5.frame = CGRect(x: 5,
                               y: 5,
                               width: 260,
                               height: contentView.frame.size.height-10)
         
         label6.frame = CGRect(x: 300,
-                              //                                up or down
                               y: 5,
                               width: 90,
                               height: contentView.frame.size.height-10)
         
     }
-    
 }
 
 
