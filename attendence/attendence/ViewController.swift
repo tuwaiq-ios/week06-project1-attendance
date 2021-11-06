@@ -74,7 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             
       let deleteAction = UIAlertAction(title: "Delete", style: .destructive){ (alertAction) in
           self.data.remove(at: indexPath.row)
-//          Firestore.firestore().document("students/2").delete()
+          Firestore.firestore().document("students/2").delete()
           tableView.reloadData()
       }
 
@@ -97,7 +97,8 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             guard  let text = textField.text, !text.isEmpty else {
                        return
                    }
-//            Firestore.firestore().document("students/2").setData(["name": "Amal","attendance":true ,"id":87])
+            Firestore.firestore().document("students/2").setData(["name": "name","attendance":true ,"id":87])
+            
             self.data.append(List(name: textField.text!, tasks: []))
             self.tabelView.reloadData()
         }

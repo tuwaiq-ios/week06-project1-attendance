@@ -102,7 +102,7 @@ class EntryViewController: UIViewController, UITableViewDelegate,UITableViewData
    }
     @objc func tapToAdd(){
 
-        dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
+        dateFormatter.dateFormat = "MMM d, h:mm a"
         
         let myDatePicker: UIDatePicker = UIDatePicker()
         
