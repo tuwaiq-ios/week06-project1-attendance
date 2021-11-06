@@ -1,0 +1,6 @@
+framework module Pods_attended {
+  umbrella header "Pods-attended-umbrella.h"
+
+  export *
+  module * { export * }
+}
