@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		517FA3BD27327C23009F07E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3BC27327C23009F07E2 /* AppDelegate.swift */; };
+		517FA3BF27327C23009F07E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3BE27327C23009F07E2 /* SceneDelegate.swift */; };
+		517FA3C627327C24009F07E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517FA3C527327C24009F07E2 /* Assets.xcassets */; };
+		517FA3C927327C24009F07E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517FA3C727327C24009F07E2 /* LaunchScreen.storyboard */; };
+		517FA3D127328085009F07E2 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3D027328085009F07E2 /* model.swift */; };
+		517FA3D327329BC2009F07E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 517FA3D227329BC2009F07E2 /* GoogleService-Info.plist */; };
+		517FA3DD2735AD32009F07E2 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3DC2735AD32009F07E2 /* Custom.swift */; };
+		517FA3E02735AD96009F07E2 /* AttendanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3DF2735AD96009F07E2 /* AttendanceCell.swift */; };
+		517FA3E22735ADCE009F07E2 /* AddAttendanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3E12735ADCE009F07E2 /* AddAttendanceCell.swift */; };
+		517FA3E42735AE5C009F07E2 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3E32735AE5C009F07E2 /* DetailCell.swift */; };
+		517FA3E72735AEBA009F07E2 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3E62735AEBA009F07E2 /* Attendance.swift */; };
+		517FA3E92735AF12009F07E2 /* AttendanceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3E82735AF12009F07E2 /* AttendanceDetail.swift */; };
+		517FA3EB2735AF4E009F07E2 /* AddAttendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3EA2735AF4E009F07E2 /* AddAttendance.swift */; };
+		517FA3ED2735AF82009F07E2 /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3EC2735AF82009F07E2 /* Students.swift */; };
+		517FA3EF2735AFBF009F07E2 /* AddStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517FA3EE2735AFBF009F07E2 /* AddStudent.swift */; };
+		E6E2B1D05D4E11809781356D /* Pods_attendance_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4065DC1B00EE594A89202 /* Pods_attendance_List.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		517FA3B927327C23009F07E2 /* attendance List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "attendance List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		517FA3BC27327C23009F07E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		517FA3BE27327C23009F07E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		517FA3C527327C24009F07E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		517FA3C827327C24009F07E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		517FA3CA27327C24009F07E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517FA3D027328085009F07E2 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		517FA3D227329BC2009F07E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		517FA3DC2735AD32009F07E2 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		517FA3DF2735AD96009F07E2 /* AttendanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCell.swift; sourceTree = "<group>"; };
+		517FA3E12735ADCE009F07E2 /* AddAttendanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttendanceCell.swift; sourceTree = "<group>"; };
+		517FA3E32735AE5C009F07E2 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		517FA3E62735AEBA009F07E2 /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		517FA3E82735AF12009F07E2 /* AttendanceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDetail.swift; sourceTree = "<group>"; };
+		517FA3EA2735AF4E009F07E2 /* AddAttendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAttendance.swift; sourceTree = "<group>"; };
+		517FA3EC2735AF82009F07E2 /* Students.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Students.swift; sourceTree = "<group>"; };
+		517FA3EE2735AFBF009F07E2 /* AddStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudent.swift; sourceTree = "<group>"; };
+		5F9B11DBE261A104BF6294BB /* Pods-attendance List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-attendance List.debug.xcconfig"; path = "Target Support Files/Pods-attendance List/Pods-attendance List.debug.xcconfig"; sourceTree = "<group>"; };
+		84A4065DC1B00EE594A89202 /* Pods_attendance_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_attendance_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		875C8D0BBC29630FA7A4F0D2 /* Pods-attendance List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-attendance List.release.xcconfig"; path = "Target Support Files/Pods-attendance List/Pods-attendance List.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		517FA3B627327C23009F07E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E2B1D05D4E11809781356D /* Pods_attendance_List.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14F351880A0212260A6DC9BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F9B11DBE261A104BF6294BB /* Pods-attendance List.debug.xcconfig */,
+				875C8D0BBC29630FA7A4F0D2 /* Pods-attendance List.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		517FA3B027327C23009F07E2 = {
+			isa = PBXGroup;
+			children = (
+				517FA3BB27327C23009F07E2 /* attendance List */,
+				517FA3BA27327C23009F07E2 /* Products */,
+				14F351880A0212260A6DC9BA /* Pods */,
+				A3130B4CF4B6728E2BEF7797 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		517FA3BA27327C23009F07E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				517FA3B927327C23009F07E2 /* attendance List.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		517FA3BB27327C23009F07E2 /* attendance List */ = {
+			isa = PBXGroup;
+			children = (
+				517FA3E52735AE8C009F07E2 /* Screens */,
+				517FA3DE2735AD65009F07E2 /* cells */,
+				517FA3D227329BC2009F07E2 /* GoogleService-Info.plist */,
+				517FA3BC27327C23009F07E2 /* AppDelegate.swift */,
+				517FA3BE27327C23009F07E2 /* SceneDelegate.swift */,
+				517FA3D027328085009F07E2 /* model.swift */,
+				517FA3C727327C24009F07E2 /* LaunchScreen.storyboard */,
+				517FA3C527327C24009F07E2 /* Assets.xcassets */,
+				517FA3CA27327C24009F07E2 /* Info.plist */,
+				517FA3DC2735AD32009F07E2 /* Custom.swift */,
+			);
+			path = "attendance List";
+			sourceTree = "<group>";
+		};
+		517FA3DE2735AD65009F07E2 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				517FA3DF2735AD96009F07E2 /* AttendanceCell.swift */,
+				517FA3E12735ADCE009F07E2 /* AddAttendanceCell.swift */,
+				517FA3E32735AE5C009F07E2 /* DetailCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		517FA3E52735AE8C009F07E2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				517FA3E62735AEBA009F07E2 /* Attendance.swift */,
+				517FA3E82735AF12009F07E2 /* AttendanceDetail.swift */,
+				517FA3EA2735AF4E009F07E2 /* AddAttendance.swift */,
+				517FA3EC2735AF82009F07E2 /* Students.swift */,
+				517FA3EE2735AFBF009F07E2 /* AddStudent.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A3130B4CF4B6728E2BEF7797 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84A4065DC1B00EE594A89202 /* Pods_attendance_List.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		517FA3B827327C23009F07E2 /* attendance List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517FA3CD27327C24009F07E2 /* Build configuration list for PBXNativeTarget "attendance List" */;
+			buildPhases = (
+				2015F4B6FAC5465C45E71452 /* [CP] Check Pods Manifest.lock */,
+				517FA3B527327C23009F07E2 /* Sources */,
+				517FA3B627327C23009F07E2 /* Frameworks */,
+				517FA3B727327C23009F07E2 /* Resources */,
+				844FEE4CBF26E7CC4EF850BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "attendance List";
+			productName = "attendance List";
+			productReference = 517FA3B927327C23009F07E2 /* attendance List.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		517FA3B127327C23009F07E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					517FA3B827327C23009F07E2 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 517FA3B427327C23009F07E2 /* Build configuration list for PBXProject "attendance List" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 517FA3B027327C23009F07E2;
+			productRefGroup = 517FA3BA27327C23009F07E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				517FA3B827327C23009F07E2 /* attendance List */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		517FA3B727327C23009F07E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517FA3C927327C24009F07E2 /* LaunchScreen.storyboard in Resources */,
+				517FA3C627327C24009F07E2 /* Assets.xcassets in Resources */,
+				517FA3D327329BC2009F07E2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2015F4B6FAC5465C45E71452 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-attendance List-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844FEE4CBF26E7CC4EF850BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-attendance List/Pods-attendance List-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-attendance List/Pods-attendance List-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-attendance List/Pods-attendance List-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		517FA3B527327C23009F07E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517FA3E72735AEBA009F07E2 /* Attendance.swift in Sources */,
+				517FA3E22735ADCE009F07E2 /* AddAttendanceCell.swift in Sources */,
+				517FA3BD27327C23009F07E2 /* AppDelegate.swift in Sources */,
+				517FA3ED2735AF82009F07E2 /* Students.swift in Sources */,
+				517FA3BF27327C23009F07E2 /* SceneDelegate.swift in Sources */,
+				517FA3EF2735AFBF009F07E2 /* AddStudent.swift in Sources */,
+				517FA3EB2735AF4E009F07E2 /* AddAttendance.swift in Sources */,
+				517FA3E02735AD96009F07E2 /* AttendanceCell.swift in Sources */,
+				517FA3DD2735AD32009F07E2 /* Custom.swift in Sources */,
+				517FA3E42735AE5C009F07E2 /* DetailCell.swift in Sources */,
+				517FA3D127328085009F07E2 /* model.swift in Sources */,
+				517FA3E92735AF12009F07E2 /* AttendanceDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		517FA3C727327C24009F07E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				517FA3C827327C24009F07E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		517FA3CB27327C24009F07E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		517FA3CC27327C24009F07E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		517FA3CE27327C24009F07E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9B11DBE261A104BF6294BB /* Pods-attendance List.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R45CVNVGSJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "attendance List/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "maram.attendance-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		517FA3CF27327C24009F07E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875C8D0BBC29630FA7A4F0D2 /* Pods-attendance List.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R45CVNVGSJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "attendance List/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "maram.attendance-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		517FA3B427327C23009F07E2 /* Build configuration list for PBXProject "attendance List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517FA3CB27327C24009F07E2 /* Debug */,
+				517FA3CC27327C24009F07E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517FA3CD27327C24009F07E2 /* Build configuration list for PBXNativeTarget "attendance List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517FA3CE27327C24009F07E2 /* Debug */,
+				517FA3CF27327C24009F07E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 517FA3B127327C23009F07E2 /* Project object */;
+}
