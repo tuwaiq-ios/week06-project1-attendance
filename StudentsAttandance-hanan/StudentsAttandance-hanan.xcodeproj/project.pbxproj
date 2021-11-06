@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FDABB26717D11B6AB615FA2 /* Pods_StudentsAttandance_hanan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B00A04C22F488624FCF1BCF /* Pods_StudentsAttandance_hanan.framework */; };
+		860CE721273285340025F4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE720273285340025F4CA /* AppDelegate.swift */; };
+		860CE723273285340025F4CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE722273285340025F4CA /* SceneDelegate.swift */; };
+		860CE725273285340025F4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE724273285340025F4CA /* ViewController.swift */; };
+		860CE728273285340025F4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860CE726273285340025F4CA /* Main.storyboard */; };
+		860CE72A273285370025F4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860CE729273285370025F4CA /* Assets.xcassets */; };
+		860CE72D273285370025F4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860CE72B273285370025F4CA /* LaunchScreen.storyboard */; };
+		860CE735273286140025F4CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 860CE734273286140025F4CA /* GoogleService-Info.plist */; };
+		860CE737273287EC0025F4CA /* StudentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE736273287EC0025F4CA /* StudentsController.swift */; };
+		860CE739273288080025F4CA /* DayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE738273288080025F4CA /* DayController.swift */; };
+		8657B752273410CF005FDFDE /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8657B751273410CF005FDFDE /* DaysTableViewCell.swift */; };
+		865E4F9227359BD500505A33 /* AttandanceControllr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E4F9127359BD500505A33 /* AttandanceControllr.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F564F500C45DA3B3A968682 /* Pods-StudentsAttandance-hanan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudentsAttandance-hanan.debug.xcconfig"; path = "Target Support Files/Pods-StudentsAttandance-hanan/Pods-StudentsAttandance-hanan.debug.xcconfig"; sourceTree = "<group>"; };
+		5B00A04C22F488624FCF1BCF /* Pods_StudentsAttandance_hanan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudentsAttandance_hanan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DB336C6EF693468D1ABB01 /* Pods-StudentsAttandance-hanan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudentsAttandance-hanan.release.xcconfig"; path = "Target Support Files/Pods-StudentsAttandance-hanan/Pods-StudentsAttandance-hanan.release.xcconfig"; sourceTree = "<group>"; };
+		860CE71D273285340025F4CA /* StudentsAttandance-hanan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudentsAttandance-hanan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		860CE720273285340025F4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		860CE722273285340025F4CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		860CE724273285340025F4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		860CE727273285340025F4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		860CE729273285370025F4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		860CE72C273285370025F4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		860CE72E273285370025F4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		860CE734273286140025F4CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		860CE736273287EC0025F4CA /* StudentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsController.swift; sourceTree = "<group>"; };
+		860CE738273288080025F4CA /* DayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayController.swift; sourceTree = "<group>"; };
+		8657B751273410CF005FDFDE /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
+		865E4F9127359BD500505A33 /* AttandanceControllr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttandanceControllr.swift; sourceTree = "<group>"; tabWidth = 3; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		860CE71A273285340025F4CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDABB26717D11B6AB615FA2 /* Pods_StudentsAttandance_hanan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD17212B7CE4927016323A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B00A04C22F488624FCF1BCF /* Pods_StudentsAttandance_hanan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49A3B5D0E98216D8359D1641 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F564F500C45DA3B3A968682 /* Pods-StudentsAttandance-hanan.debug.xcconfig */,
+				77DB336C6EF693468D1ABB01 /* Pods-StudentsAttandance-hanan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		860CE714273285340025F4CA = {
+			isa = PBXGroup;
+			children = (
+				860CE71F273285340025F4CA /* StudentsAttandance-hanan */,
+				860CE71E273285340025F4CA /* Products */,
+				49A3B5D0E98216D8359D1641 /* Pods */,
+				2CD17212B7CE4927016323A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		860CE71E273285340025F4CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				860CE71D273285340025F4CA /* StudentsAttandance-hanan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		860CE71F273285340025F4CA /* StudentsAttandance-hanan */ = {
+			isa = PBXGroup;
+			children = (
+				860CE720273285340025F4CA /* AppDelegate.swift */,
+				860CE722273285340025F4CA /* SceneDelegate.swift */,
+				860CE724273285340025F4CA /* ViewController.swift */,
+				860CE734273286140025F4CA /* GoogleService-Info.plist */,
+				860CE726273285340025F4CA /* Main.storyboard */,
+				860CE729273285370025F4CA /* Assets.xcassets */,
+				860CE72B273285370025F4CA /* LaunchScreen.storyboard */,
+				860CE72E273285370025F4CA /* Info.plist */,
+				860CE736273287EC0025F4CA /* StudentsController.swift */,
+				860CE738273288080025F4CA /* DayController.swift */,
+				8657B751273410CF005FDFDE /* DaysTableViewCell.swift */,
+				865E4F9127359BD500505A33 /* AttandanceControllr.swift */,
+			);
+			path = "StudentsAttandance-hanan";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		860CE71C273285340025F4CA /* StudentsAttandance-hanan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 860CE731273285370025F4CA /* Build configuration list for PBXNativeTarget "StudentsAttandance-hanan" */;
+			buildPhases = (
+				371068277CF8598F1C49CAE8 /* [CP] Check Pods Manifest.lock */,
+				860CE719273285340025F4CA /* Sources */,
+				860CE71A273285340025F4CA /* Frameworks */,
+				860CE71B273285340025F4CA /* Resources */,
+				14626988E5BFE0147816B569 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StudentsAttandance-hanan";
+			productName = "StudentsAttandance-hanan";
+			productReference = 860CE71D273285340025F4CA /* StudentsAttandance-hanan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		860CE715273285340025F4CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					860CE71C273285340025F4CA = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 860CE718273285340025F4CA /* Build configuration list for PBXProject "StudentsAttandance-hanan" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 860CE714273285340025F4CA;
+			productRefGroup = 860CE71E273285340025F4CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				860CE71C273285340025F4CA /* StudentsAttandance-hanan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		860CE71B273285340025F4CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860CE735273286140025F4CA /* GoogleService-Info.plist in Resources */,
+				860CE72D273285370025F4CA /* LaunchScreen.storyboard in Resources */,
+				860CE72A273285370025F4CA /* Assets.xcassets in Resources */,
+				860CE728273285340025F4CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14626988E5BFE0147816B569 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudentsAttandance-hanan/Pods-StudentsAttandance-hanan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudentsAttandance-hanan/Pods-StudentsAttandance-hanan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudentsAttandance-hanan/Pods-StudentsAttandance-hanan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		371068277CF8598F1C49CAE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudentsAttandance-hanan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		860CE719273285340025F4CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860CE725273285340025F4CA /* ViewController.swift in Sources */,
+				860CE737273287EC0025F4CA /* StudentsController.swift in Sources */,
+				865E4F9227359BD500505A33 /* AttandanceControllr.swift in Sources */,
+				860CE721273285340025F4CA /* AppDelegate.swift in Sources */,
+				860CE723273285340025F4CA /* SceneDelegate.swift in Sources */,
+				8657B752273410CF005FDFDE /* DaysTableViewCell.swift in Sources */,
+				860CE739273288080025F4CA /* DayController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		860CE726273285340025F4CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				860CE727273285340025F4CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		860CE72B273285370025F4CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				860CE72C273285370025F4CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		860CE72F273285370025F4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		860CE730273285370025F4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		860CE732273285370025F4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F564F500C45DA3B3A968682 /* Pods-StudentsAttandance-hanan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 822RG578M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StudentsAttandance-hanan/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanan.StudentsAttandance-hanan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		860CE733273285370025F4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77DB336C6EF693468D1ABB01 /* Pods-StudentsAttandance-hanan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 822RG578M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StudentsAttandance-hanan/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanan.StudentsAttandance-hanan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		860CE718273285340025F4CA /* Build configuration list for PBXProject "StudentsAttandance-hanan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				860CE72F273285370025F4CA /* Debug */,
+				860CE730273285370025F4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		860CE731273285370025F4CA /* Build configuration list for PBXNativeTarget "StudentsAttandance-hanan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				860CE732273285370025F4CA /* Debug */,
+				860CE733273285370025F4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 860CE715273285340025F4CA /* Project object */;
+}
