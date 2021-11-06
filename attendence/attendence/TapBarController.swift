@@ -21,8 +21,8 @@ class TabBarController: UITabBarController {
     
  func setupVCs() {
    viewControllers = [
-    createNavController(for: ViewController(), title: NSLocalizedString("Students", comment: ""), image: UIImage(systemName: "person")!),
-    createNavController(for: EntryViewController(), title: NSLocalizedString("Days", comment: ""), image: UIImage(systemName: "person")!)
+    createNavController(for: ViewController(), title: NSLocalizedString("Students", comment: ""), image: UIImage(systemName: "rectangle.stack.person.crop.fill")!),
+    createNavController(for: EntryViewController(), title: NSLocalizedString("Days", comment: ""), image: UIImage(systemName: "calendar")!)
     ]
   }
  override func viewDidLoad() {
