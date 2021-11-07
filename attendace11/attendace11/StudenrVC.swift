@@ -1,16 +1,19 @@
+//
+//  StudenrVC.swift
+//  attendace11
+//
+//  Created by Macbook on 02/04/1443 AH.
+//
+
 import UIKit
 
 import FirebaseFirestore
 import Firebase
 
-struct ContactsData {
-    var nameContact: String
-    //var PicContact : String
-}
 
 
 
-class StudentsVc: UIViewController , UITableViewDataSource, UITableViewDelegate {
+class StudentsVC: UIViewController , UITableViewDataSource, UITableViewDelegate {
     let BtnAdd = UIButton()
     let TV1 = UITableView()
     var Addnews : Array<Students> = []
@@ -56,7 +59,7 @@ class StudentsVc: UIViewController , UITableViewDataSource, UITableViewDelegate 
             var stArr = [Students]()
             for document in snapshot!.documents {
                 let data = document.data()
-                stArr.append(Students(name: data ["name"] as! String
+                stArr.append(Students(name: data ["name"] as? String
                                      )
                 )
         }
@@ -111,4 +114,5 @@ class Cell: UITableViewCell {
         super.init(coder: coder)
     }
 }
+
 

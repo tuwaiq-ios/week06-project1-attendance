@@ -1,19 +1,14 @@
 //
-//  Days.swift
-//  attendace
+//  days.swift
+//  attendace11
 //
-//  Created by Macbook on 30/03/1443 AH.
+//  Created by Macbook on 02/04/1443 AH.
 //
 
 import UIKit
-import Firebase
-import FirebaseFirestore
+
 
 class DateList : UIViewController , UITableViewDelegate ,UITableViewDataSource {
-    
-    
-    var todayday : Array<Day> = []
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todayday.count
@@ -37,11 +32,7 @@ class DateList : UIViewController , UITableViewDelegate ,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dd = todayday[indexPath.row]
         
-        
-        
-        //        self.present(PrsentPage(), animated: true, completion: nil)
-        let vc = PrsentPage()
-        navigationController?.pushViewController(vc, animated: true)
+        self.present(PrsentPage(), animated: true, completion: nil)
     }
     
     
@@ -75,43 +66,25 @@ class DateList : UIViewController , UITableViewDelegate ,UITableViewDataSource {
         ])
         BtnAdd.backgroundColor = .orange
         // BtnAdd.addTarget(self, action: #selector(a), for: .touchUpInside)
-        BtnAdd.backgroundColor = UIColor.gray
+        BtnAdd.backgroundColor = UIColor.red
         BtnAdd.setTitle("Add Day", for: .normal)
         BtnAdd.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(BtnAdd)
         
-        Firestore.firestore().collection("Days").addSnapshotListener { snapshot,error in
-            if error != nil {
-                print (error!)
-                return
-            }
-//            var dArr = [Day]()
-//            for document in snapshot!.documents {
-//                let data = document.data()
-//                let date1 = (data["Date"] as! Timestamp).dateValue()
-//                dArr.append(Day(date : date1))
-//            }
-//            self.todayday = dArr
-//            self.TV.reloadData()
-            
-        }
-        //TV.reloadData()
+        
         //        addTarget(self, action: #selector(showSignupVC), for: .touchUpInside)
     }
     
     @objc func buttonAction(sender: UIButton!) {
         
         let secondController = DatePicer()
-        secondController.callbackClosure1 = { [weak self] in
+        secondController.callbackClosure = { [weak self] in
             
             self?.TV.reloadData()
         }
         present(secondController, animated: true, completion: nil)
-        // navigationController?.pushViewController(secondController, animated: true)
         
     }
-    
-    
     
 }
 

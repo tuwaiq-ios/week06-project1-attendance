@@ -1,8 +1,8 @@
 //
 //  Presnt.swift
-//  attendace
+//  attendace11
 //
-//  Created by Macbook on 30/03/1443 AH.
+//  Created by Macbook on 02/04/1443 AH.
 //
 
 import Foundation
@@ -80,6 +80,5 @@ class Cell2: UITableViewCell {
         super.init(coder: coder)
     }
 }
-
 
 

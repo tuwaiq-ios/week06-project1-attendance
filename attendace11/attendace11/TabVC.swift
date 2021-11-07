@@ -1,8 +1,8 @@
 //
 //  TabVC.swift
-//  attendace
+//  attendace11
 //
-//  Created by Macbook on 30/03/1443 AH.
+//  Created by Macbook on 02/04/1443 AH.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ class TabVC: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         delegate = self
         let item2 = DateList()
-        let item3 = StudentsVc()
+        let item3 = StudentsVC()
         let icon2 = UITabBarItem(title: "days", image: UIImage(systemName: "timer"), selectedImage: UIImage(systemName: "timer"))
         let icon3 = UITabBarItem(title: "students", image: UIImage(systemName: "person.fill.badge.plus"), selectedImage: UIImage(systemName: "person.fill.badge.plus"))
 

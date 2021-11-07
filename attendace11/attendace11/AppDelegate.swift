@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  attendace
+//  attendace11
 //
-//  Created by Macbook on 29/03/1443 AH.
+//  Created by Macbook on 02/04/1443 AH.
 //
 
 import UIKit
@@ -13,9 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         FirebaseApp.configure()
-        // Override point for customization after application launch.
         return true
     }
 

@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  attendace
+//  attendace11
 //
-//  Created by Macbook on 29/03/1443 AH.
+//  Created by Macbook on 02/04/1443 AH.
 //
 
 import UIKit
@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+     
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
                  window = UIWindow(frame: windowScene.coordinateSpace.bounds)

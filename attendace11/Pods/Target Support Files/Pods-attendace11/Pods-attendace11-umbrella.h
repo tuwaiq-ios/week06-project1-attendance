@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_attendaceVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_attendaceVersionString[];
+FOUNDATION_EXPORT double Pods_attendace11VersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_attendace11VersionString[];
 
