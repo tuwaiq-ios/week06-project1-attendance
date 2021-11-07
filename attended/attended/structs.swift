@@ -9,14 +9,14 @@ import Foundation
 import FirebaseFirestore
 
 struct Student {
-    var name: String
+    let name: String
     var attendance: Bool
 }
 
  struct Days {
-    let name : String?
+    let name : String
      var Date1 : Timestamp
-    var id : Int?
+    let id : Int
    
-//    let attendStudent : [Student]
+   // let attendStudent : [Student]
 }

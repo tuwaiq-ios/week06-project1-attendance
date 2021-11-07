@@ -26,10 +26,12 @@ import UIKit
         Student(name: "10- maryam", attendance: true),
         Student(name: "11- yara", attendance: true)
     ]
+        
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
          title = "Students Name : 👩🏻‍💻"
         
         tv.delegate = self
@@ -53,7 +55,9 @@ import UIKit
             attendanceLabel.leftAnchor.constraint(equalTo: view.leftAnchor),
             attendanceLabel.rightAnchor.constraint(equalTo: view.rightAnchor),
         ])
-        Firestore.firestore().collection("Student").addSnapshotListener {
+        
+
+        Firestore.firestore().collection("student").addSnapshotListener {
             snapshot,error in
             if error != nil {
                 print (error)
@@ -64,8 +68,8 @@ import UIKit
                 let data = document.data()
                 studentsArray.append(
                    Student(
-                    name: data["name"]as! String,
-                   attendance: data["attendance"]as! Bool)
+                    name: data["name"] as! String,
+                   attendance: data["attendance"] as! Bool)
                 )
             }
             self.students = studentsArray

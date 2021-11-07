@@ -15,9 +15,9 @@
 		84EBFA2A273286AD00D8FCF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84EBFA29273286AD00D8FCF8 /* GoogleService-Info.plist */; };
 		84EBFA2C2732901D00D8FCF8 /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFA2B2732901D00D8FCF8 /* DaysTableViewController.swift */; };
 		84EBFA2E2732923900D8FCF8 /* structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFA2D2732923900D8FCF8 /* structs.swift */; };
-		84EBFA30273297BA00D8FCF8 /* AllstudentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFA2F273297BA00D8FCF8 /* AllstudentNames.swift */; };
+		84EBFA30273297BA00D8FCF8 /* allStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFA2F273297BA00D8FCF8 /* allStudent.swift */; };
+		84EBFA322732A5A400D8FCF8 /* Tap bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFA312732A5A300D8FCF8 /* Tap bar.swift */; };
 		84EBFA3427330A7500D8FCF8 /* StudentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFA3327330A7500D8FCF8 /* StudentsVC.swift */; };
-		84EBFA3627370F4C00D8FCF8 /* Tap bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFA3527370F4C00D8FCF8 /* Tap bar.swift */; };
 		DF636263C41DAC917CB90980 /* Pods_attended.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9C7D517BEC64BEFCF5133D /* Pods_attended.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +33,9 @@
 		84EBFA29273286AD00D8FCF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84EBFA2B2732901D00D8FCF8 /* DaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		84EBFA2D2732923900D8FCF8 /* structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structs.swift; sourceTree = "<group>"; };
-		84EBFA2F273297BA00D8FCF8 /* AllstudentNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllstudentNames.swift; sourceTree = "<group>"; };
+		84EBFA2F273297BA00D8FCF8 /* allStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allStudent.swift; sourceTree = "<group>"; };
+		84EBFA312732A5A300D8FCF8 /* Tap bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Tap bar.swift"; path = "../../SaraChat/SaraChat/Controllers/Tap bar.swift"; sourceTree = "<group>"; };
 		84EBFA3327330A7500D8FCF8 /* StudentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsVC.swift; sourceTree = "<group>"; };
-		84EBFA3527370F4C00D8FCF8 /* Tap bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Tap bar.swift"; path = "../../../Desktop/SaraChat/SaraChat/Controllers/Tap bar.swift"; sourceTree = "<group>"; };
 		B0FDAC72D4198DDB8B67DDE1 /* Pods-attended.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-attended.debug.xcconfig"; path = "Target Support Files/Pods-attended/Pods-attended.debug.xcconfig"; sourceTree = "<group>"; };
 		BBD461F5CA0E2DF2D82DC155 /* Pods-attended.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-attended.release.xcconfig"; path = "Target Support Files/Pods-attended/Pods-attended.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,10 +77,10 @@
 				84EBFA152732861700D8FCF8 /* AppDelegate.swift */,
 				84EBFA172732861700D8FCF8 /* SceneDelegate.swift */,
 				84EBFA192732861700D8FCF8 /* ViewController.swift */,
-				84EBFA2F273297BA00D8FCF8 /* AllstudentNames.swift */,
 				84EBFA2B2732901D00D8FCF8 /* DaysTableViewController.swift */,
-				84EBFA3527370F4C00D8FCF8 /* Tap bar.swift */,
+				84EBFA2F273297BA00D8FCF8 /* allStudent.swift */,
 				84EBFA3327330A7500D8FCF8 /* StudentsVC.swift */,
+				84EBFA312732A5A300D8FCF8 /* Tap bar.swift */,
 				84EBFA2D2732923900D8FCF8 /* structs.swift */,
 				84EBFA1E2732861B00D8FCF8 /* Assets.xcassets */,
 				84EBFA202732861B00D8FCF8 /* LaunchScreen.storyboard */,
@@ -222,10 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EBFA2C2732901D00D8FCF8 /* DaysTableViewController.swift in Sources */,
-				84EBFA30273297BA00D8FCF8 /* AllstudentNames.swift in Sources */,
+				84EBFA30273297BA00D8FCF8 /* allStudent.swift in Sources */,
 				84EBFA1A2732861700D8FCF8 /* ViewController.swift in Sources */,
 				84EBFA162732861700D8FCF8 /* AppDelegate.swift in Sources */,
-				84EBFA3627370F4C00D8FCF8 /* Tap bar.swift in Sources */,
+				84EBFA322732A5A400D8FCF8 /* Tap bar.swift in Sources */,
 				84EBFA182732861700D8FCF8 /* SceneDelegate.swift in Sources */,
 				84EBFA3427330A7500D8FCF8 /* StudentsVC.swift in Sources */,
 				84EBFA2E2732923900D8FCF8 /* structs.swift in Sources */,
