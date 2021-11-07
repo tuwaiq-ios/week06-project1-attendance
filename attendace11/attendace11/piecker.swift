@@ -1,9 +1,6 @@
 //
 //  ViewController.swift
 //  attendance
-//
-//  Created by Hassan Yahya on 28/03/1443 AH.
-//
 
 import UIKit
 
