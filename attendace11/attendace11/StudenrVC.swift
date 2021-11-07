@@ -43,7 +43,7 @@ class StudentsVC: UIViewController , UITableViewDataSource, UITableViewDelegate 
             
             BtnAdd.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         ])
-        BtnAdd.backgroundColor = .orange
+        //BtnAdd.backgroundColor = .orange
         // BtnAdd.addTarget(self, action: #selector(a), for: .touchUpInside)
         BtnAdd.backgroundColor = UIColor.gray
         BtnAdd.setTitle("Add Student ", for: .normal)
@@ -59,7 +59,7 @@ class StudentsVC: UIViewController , UITableViewDataSource, UITableViewDelegate 
             var stArr = [Students]()
             for document in snapshot!.documents {
                 let data = document.data()
-                stArr.append(Students(name: data ["name"] as? String
+                stArr.append(Students(name: data ["name"] as! String
                                      )
                 )
         }

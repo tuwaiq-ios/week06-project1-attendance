@@ -64,9 +64,9 @@ class DateList : UIViewController , UITableViewDelegate ,UITableViewDataSource {
             
             BtnAdd.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         ])
-        BtnAdd.backgroundColor = .orange
+       // BtnAdd.backgroundColor = .orange
         // BtnAdd.addTarget(self, action: #selector(a), for: .touchUpInside)
-        BtnAdd.backgroundColor = UIColor.red
+        BtnAdd.backgroundColor = UIColor.gray
         BtnAdd.setTitle("Add Day", for: .normal)
         BtnAdd.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(BtnAdd)

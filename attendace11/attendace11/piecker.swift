@@ -28,7 +28,7 @@ class DatePicer: UIViewController {
 		
 		
 		
-		view.backgroundColor = .cyan
+		view.backgroundColor = .black
 		birthDateTxt.placeholder = "birthDateTxt"
 		birthDateTxt.textAlignment = .center
 		birthDateTxt.translatesAutoresizingMaskIntoConstraints = false
