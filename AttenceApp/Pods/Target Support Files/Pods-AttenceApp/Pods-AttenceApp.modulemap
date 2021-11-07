@@ -1,0 +1,6 @@
+framework module Pods_AttenceApp {
+  umbrella header "Pods-AttenceApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
