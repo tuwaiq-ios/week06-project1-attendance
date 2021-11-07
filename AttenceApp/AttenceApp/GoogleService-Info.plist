@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>188325726392-v52h3pc4kh1408q7384517accu3kh5ro.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.188325726392-v52h3pc4kh1408q7384517accu3kh5ro</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD7DusH_p_7n0jIiWZfjQi9Z5mXvRtYDow</string>
+	<key>GCM_SENDER_ID</key>
+	<string>188325726392</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kholod.com.AttenceApp</string>
+	<key>PROJECT_ID</key>
+	<string>attenceapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>attenceapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:188325726392:ios:2db78f8ba234110053cc4d</string>
+</dict>
+</plist>
