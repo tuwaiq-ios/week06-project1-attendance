@@ -10,20 +10,7 @@ class CustomCell: UICollectionViewCell {
 
     static let identifier = "CustomCell"
     
-//    let dateFormatter: DateFormatter = DateFormatter()
-    
-   
-    
-  
-//
-//    func convertTimestamp(serverTimestamp: Double) -> String {
-//            let x = serverTimestamp / 1000
-//            let date = NSDate(timeIntervalSince1970: x)
-//            let formatter = DateFormatter()
-//            formatter.dateStyle = .long
-//            formatter.timeStyle = .medium
-//            return formatter.string(from: date as Date)
-//        }
+
 
     let label: UILabel = {
         let label = UILabel()
@@ -73,14 +60,14 @@ class CustomCell: UICollectionViewCell {
         
      attendancelabel.centerXAnchor.constraint(equalTo:self.centerXAnchor).isActive = true
     attendancelabel.topAnchor.constraint(equalTo: self.topAnchor,constant: 35).isActive = true
-    attendancelabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 270).isActive = true
+    attendancelabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 250).isActive = true
     attendancelabel.trailingAnchor.constraint(equalTo:self.trailingAnchor).isActive = true
         
         
         
     absencelabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     absencelabel.topAnchor.constraint(equalTo: self.topAnchor,constant: 35).isActive = true
-    absencelabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 350).isActive = true
+    absencelabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 300).isActive = true
     absencelabel.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         
         

@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UITabBarControllerDeleg
         window?.makeKeyAndVisible()
         let tabBar = UITabBarController()
         
-        let StudentsName = UINavigationController(rootViewController: StudentsName())
+        let StudentsName = UINavigationController(rootViewController: StudentsVC())
         
         StudentsName.tabBarItem.title = "students"
         StudentsName.tabBarItem.image = UIImage(systemName: "person")!
