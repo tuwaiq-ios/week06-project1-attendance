@@ -9,7 +9,9 @@ import Foundation
 import FirebaseFirestore
 
 struct Day {
+    let id: String
     let date : Date
+    let attendenc: Array<String>
 }
 
 
@@ -18,10 +20,4 @@ struct Student{
     let studentName: String
 }
  
-var days = [Day]()
 
-
-var attendedStudents = [String]()
-var students = [Student]()
-var presented = [String]()
-var absent = [String]()

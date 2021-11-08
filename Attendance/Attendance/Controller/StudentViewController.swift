@@ -11,60 +11,54 @@ import FirebaseFirestore
 
 class StudentViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
 
-    let addStudentButton = UIButton()
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-    let gradientLayer = CAGradientLayer()
+    let addStudentButton    = UIButton()
+    let collectionView      = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    let gradientLayer       = CAGradientLayer()
+    var students            = [Student]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemGray6
+        
         setupAddStudentButton()
         setuoCollectionView()
     
-        
-        let db = Firestore.firestore()
-        db.collection("students").addSnapshotListener { (querySnapshot, err) in
-            var studentsArray =  [Student]()
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-//                    print("\(document.documentID) => \(document.data())")
-                    let data = document.data()
-                    let id = data["id"] as! String
-                    let name = data["name"] as! String
-                    studentsArray.append(Student(id: id, studentName: name))
-                }
-                students = studentsArray
-                self.collectionView.reloadData()
-            }
+        StudentService.shared.studentListenr { newStudents in
+            self.students = newStudents
             self.collectionView.reloadData()
         }
+        
+       
     }
     
     @objc func addStudentTapped(){
         
-        let vc = NewStudentViewController()
-        vc.title = "New Student"
-        let navVC = UINavigationController(rootViewController: vc)
+        let vc      = NewStudentViewController()
+        vc.title    = "New Student"
+        let navVC   = UINavigationController(rootViewController: vc)
+        
         present(navVC, animated: true, completion: nil)
                     
     }
   
     
     func setupAddStudentButton(){
-        let topColor = UIColor(red: 120.0/255.0, green: 148.0/255.0, blue: 234.0/255.0, alpha: 1.0)
+        let topColor    = UIColor(red: 120.0/255.0, green: 148.0/255.0, blue: 234.0/255.0, alpha: 1.0)
         let bottomColor = UIColor(red: 42.0/255.0, green: 74.0/255.0, blue: 245.0/255.0, alpha: 1.0)
         let colorsArray = [topColor, bottomColor]
+    
         addStudentButton.setGradientBackgroundColors(colorsArray,
                                                  direction: .toBottom,
                                                  for: .normal)
+        
         addStudentButton.setTitle("Add Student", for: .normal)
-        addStudentButton.titleLabel?.font = .boldSystemFont(ofSize: 18)
-        addStudentButton.layer.masksToBounds = true
-        addStudentButton.layer.cornerRadius = 10.0
+        addStudentButton.titleLabel?.font       = .boldSystemFont(ofSize: 18)
+        addStudentButton.layer.masksToBounds    = true
+        addStudentButton.layer.cornerRadius     = 10.0
+        
         addStudentButton.translatesAutoresizingMaskIntoConstraints = false
+        
         view.addSubview(addStudentButton)
         NSLayoutConstraint.activate([
             addStudentButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -130),
@@ -79,13 +73,15 @@ class StudentViewController: UIViewController , UICollectionViewDelegate, UIColl
     
     func setuoCollectionView(){
       
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.backgroundColor = .clear
+        collectionView.delegate             = self
+        collectionView.dataSource           = self
+        collectionView.backgroundColor      = .clear
         collectionView.alwaysBounceVertical = true
+        
         collectionView.register(StudentCollectionViewCell.self, forCellWithReuseIdentifier: "student")
        
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
         view.addSubview(collectionView)
         NSLayoutConstraint.activate([
             collectionView.leftAnchor.constraint(equalTo: view.leftAnchor),
@@ -112,6 +108,7 @@ class StudentViewController: UIViewController , UICollectionViewDelegate, UIColl
         
         return cell
     }
+    
     
     func collectionView(_ collectionView: UICollectionView,
                             layout collectionViewLayout: UICollectionViewLayout,

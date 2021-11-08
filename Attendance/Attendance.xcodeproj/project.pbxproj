@@ -16,6 +16,8 @@
 		1E0B6F0227367357008D8794 /* StudentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B6F0127367357008D8794 /* StudentCollectionViewCell.swift */; };
 		1E0B6F0427368817008D8794 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B6F0327368816008D8794 /* DateCollectionViewCell.swift */; };
 		1E0B6F062736CC41008D8794 /* NewStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B6F052736CC40008D8794 /* NewStudentViewController.swift */; };
+		1E0B6F0F2739851B008D8794 /* DayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B6F0E2739851B008D8794 /* DayService.swift */; };
+		1E0B6F11273985EA008D8794 /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0B6F10273985EA008D8794 /* StudentService.swift */; };
 		1EDA6048273272920014EF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA6047273272920014EF90 /* AppDelegate.swift */; };
 		1EDA604A273272920014EF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA6049273272920014EF90 /* SceneDelegate.swift */; };
 		1EDA604C273272920014EF90 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA604B273272920014EF90 /* DaysViewController.swift */; };
@@ -37,6 +39,8 @@
 		1E0B6F0127367357008D8794 /* StudentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E0B6F0327368816008D8794 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		1E0B6F052736CC40008D8794 /* NewStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentViewController.swift; sourceTree = "<group>"; };
+		1E0B6F0E2739851B008D8794 /* DayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayService.swift; sourceTree = "<group>"; };
+		1E0B6F10273985EA008D8794 /* StudentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
 		1EDA6044273272920014EF90 /* Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDA6047273272920014EF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EDA6049273272920014EF90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0B6F0927398375008D8794 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E0B6EF92732803D008D8794 /* DataStructs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E0B6F0A2739838A008D8794 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EDA6047273272920014EF90 /* AppDelegate.swift */,
+				1EDA6049273272920014EF90 /* SceneDelegate.swift */,
+				1EDA6050273272980014EF90 /* Assets.xcassets */,
+				1EDA6052273272980014EF90 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E0B6F0B27398395008D8794 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1EDA605B273279000014EF90 /* TabBarViewController.swift */,
+				1EDA604B273272920014EF90 /* DaysViewController.swift */,
+				1E0B6EF727327FEA008D8794 /* DaysCollectionViewCell.swift */,
+				1E0B6EFB2732C1D0008D8794 /* NewDayViewController.swift */,
+				1E0B6EFF2735308E008D8794 /* DateViewController.swift */,
+				1E0B6F0327368816008D8794 /* DateCollectionViewCell.swift */,
+				1E0B6EF527327BD6008D8794 /* StudentViewController.swift */,
+				1E0B6F0127367357008D8794 /* StudentCollectionViewCell.swift */,
+				1E0B6F052736CC40008D8794 /* NewStudentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E0B6F0D273984B4008D8794 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1E0B6F0E2739851B008D8794 /* DayService.swift */,
+				1E0B6F10273985EA008D8794 /* StudentService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		1EDA603B273272920014EF90 = {
 			isa = PBXGroup;
 			children = (
@@ -82,21 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				1E0B6EFD2733D086008D8794 /* GoogleService-Info.plist */,
-				1EDA6047273272920014EF90 /* AppDelegate.swift */,
-				1EDA6049273272920014EF90 /* SceneDelegate.swift */,
-				1E0B6EF92732803D008D8794 /* DataStructs.swift */,
-				1EDA604B273272920014EF90 /* DaysViewController.swift */,
-				1E0B6EF727327FEA008D8794 /* DaysCollectionViewCell.swift */,
-				1E0B6EFF2735308E008D8794 /* DateViewController.swift */,
-				1E0B6F0327368816008D8794 /* DateCollectionViewCell.swift */,
-				1E0B6EFB2732C1D0008D8794 /* NewDayViewController.swift */,
-				1E0B6EF527327BD6008D8794 /* StudentViewController.swift */,
-				1E0B6F052736CC40008D8794 /* NewStudentViewController.swift */,
-				1E0B6F0127367357008D8794 /* StudentCollectionViewCell.swift */,
-				1EDA605B273279000014EF90 /* TabBarViewController.swift */,
-				1EDA6050273272980014EF90 /* Assets.xcassets */,
-				1EDA6052273272980014EF90 /* LaunchScreen.storyboard */,
 				1EDA6055273272980014EF90 /* Info.plist */,
+				1E0B6F0D273984B4008D8794 /* Service */,
+				1E0B6F0927398375008D8794 /* Model */,
+				1E0B6F0A2739838A008D8794 /* View */,
+				1E0B6F0B27398395008D8794 /* Controller */,
 			);
 			path = Attendance;
 			sourceTree = "<group>";
@@ -236,7 +274,9 @@
 				1E0B6F0227367357008D8794 /* StudentCollectionViewCell.swift in Sources */,
 				1E0B6F0427368817008D8794 /* DateCollectionViewCell.swift in Sources */,
 				1E0B6EFC2732C1D0008D8794 /* NewDayViewController.swift in Sources */,
+				1E0B6F0F2739851B008D8794 /* DayService.swift in Sources */,
 				1E0B6EF627327BD6008D8794 /* StudentViewController.swift in Sources */,
+				1E0B6F11273985EA008D8794 /* StudentService.swift in Sources */,
 				1E0B6EF827327FEA008D8794 /* DaysCollectionViewCell.swift in Sources */,
 				1EDA605C273279000014EF90 /* TabBarViewController.swift in Sources */,
 				1EDA604C273272920014EF90 /* DaysViewController.swift in Sources */,

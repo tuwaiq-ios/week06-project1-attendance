@@ -10,27 +10,29 @@ import UIKit
 class DateCollectionViewCell: UICollectionViewCell {
     
     let studentNameLabel = UILabel()
-    let statLabel = UILabel()
+    let statLabel        = UILabel()
     
     override init(frame: CGRect){
         super.init(frame: frame)
         
-        self.contentView.layer.cornerRadius = 15.0
-        self.contentView.layer.borderWidth = 2.0
-        self.contentView.layer.borderColor = UIColor.clear.cgColor
-        self.contentView.layer.masksToBounds = true
-        self.contentView.backgroundColor = .white
-        self.layer.shadowColor = UIColor.lightGray.cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 3.5)
-        self.layer.shadowRadius = 3.0
-        self.layer.shadowOpacity = 0.2
-        self.layer.masksToBounds = false
-        self.layer.cornerRadius = 2
-        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
+        self.contentView.layer.cornerRadius     = 15.0
+        self.contentView.layer.borderWidth      = 2.0
+        self.contentView.layer.borderColor      = UIColor.clear.cgColor
+        self.contentView.layer.masksToBounds    = true
+        self.contentView.backgroundColor        = .white
+        self.layer.shadowColor                  = UIColor.lightGray.cgColor
+        self.layer.shadowOffset                 = CGSize(width: 0, height: 3.5)
+        self.layer.shadowRadius                 = 3.0
+        self.layer.shadowOpacity                = 0.2
+        self.layer.masksToBounds                = false
+        self.layer.cornerRadius                 = 2
+        self.layer.shadowPath                   = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
         
-        studentNameLabel.text = "test test"
-        studentNameLabel.font = .boldSystemFont(ofSize: 15)
+        studentNameLabel.text   = "test test"
+        studentNameLabel.font   = .boldSystemFont(ofSize: 15)
+        
         studentNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        
         self.addSubview(studentNameLabel)
         NSLayoutConstraint.activate([
             studentNameLabel.topAnchor.constraint(equalTo: topAnchor),
@@ -40,9 +42,11 @@ class DateCollectionViewCell: UICollectionViewCell {
         ])
 
         
-        statLabel.textColor = .red
-        statLabel.font = .boldSystemFont(ofSize: 18)
+        statLabel.textColor     = .red
+        statLabel.font          = .boldSystemFont(ofSize: 18)
+        
         statLabel.translatesAutoresizingMaskIntoConstraints = false
+        
         self.addSubview(statLabel)
         NSLayoutConstraint.activate([
             statLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
