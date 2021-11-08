@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8400AC0C2737EBDD00D82C71 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC0B2737EBDD00D82C71 /* Day.swift */; };
+		8400AC0E2737EBF500D82C71 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC0D2737EBF500D82C71 /* Student.swift */; };
+		8400AC172737EC6900D82C71 /* DayAttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC162737EC6900D82C71 /* DayAttendanceVC.swift */; };
+		8400AC1F2737EDB600D82C71 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC1E2737EDB600D82C71 /* TabVC.swift */; };
+		8400AC222739352000D82C71 /* StudentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC212739352000D82C71 /* StudentsService.swift */; };
+		8400AC2427393E1F00D82C71 /* DaysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC2327393E1F00D82C71 /* DaysService.swift */; };
+		8400AC2A27398F9E00D82C71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8400AC2927398F9E00D82C71 /* GoogleService-Info.plist */; };
+		8400AC2D2739A01300D82C71 /* StudentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC2C2739A01300D82C71 /* StudentsVC.swift */; };
+		8400AC2F2739A07E00D82C71 /* NewDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC2E2739A07E00D82C71 /* NewDayVC.swift */; };
+		8400AC312739A0EF00D82C71 /* DaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC302739A0EF00D82C71 /* DaysVC.swift */; };
+		8400AC332739A12D00D82C71 /* NewStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AC322739A12D00D82C71 /* NewStudentVC.swift */; };
+		8421AE052737DBE400BC0230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421AE042737DBE400BC0230 /* AppDelegate.swift */; };
+		8421AE072737DBE400BC0230 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421AE062737DBE400BC0230 /* SceneDelegate.swift */; };
+		8421AE0E2737DBE900BC0230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8421AE0D2737DBE900BC0230 /* Assets.xcassets */; };
+		8421AE112737DBE900BC0230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8421AE0F2737DBE900BC0230 /* LaunchScreen.storyboard */; };
+		D81C93D0C1489811BC9C2B04 /* Pods_SaraAttended.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E472A838A13FD7BFD9C4A051 /* Pods_SaraAttended.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		709771D0C9536E0256921C1A /* Pods-SaraAttended.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaraAttended.release.xcconfig"; path = "Target Support Files/Pods-SaraAttended/Pods-SaraAttended.release.xcconfig"; sourceTree = "<group>"; };
+		8400AC0B2737EBDD00D82C71 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		8400AC0D2737EBF500D82C71 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		8400AC162737EC6900D82C71 /* DayAttendanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAttendanceVC.swift; sourceTree = "<group>"; };
+		8400AC1E2737EDB600D82C71 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		8400AC212739352000D82C71 /* StudentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsService.swift; sourceTree = "<group>"; };
+		8400AC2327393E1F00D82C71 /* DaysService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysService.swift; sourceTree = "<group>"; };
+		8400AC2927398F9E00D82C71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8400AC2C2739A01300D82C71 /* StudentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsVC.swift; sourceTree = "<group>"; };
+		8400AC2E2739A07E00D82C71 /* NewDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayVC.swift; sourceTree = "<group>"; };
+		8400AC302739A0EF00D82C71 /* DaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysVC.swift; sourceTree = "<group>"; };
+		8400AC322739A12D00D82C71 /* NewStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentVC.swift; sourceTree = "<group>"; };
+		8421AE012737DBE400BC0230 /* SaraAttended.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaraAttended.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8421AE042737DBE400BC0230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8421AE062737DBE400BC0230 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8421AE0D2737DBE900BC0230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8421AE102737DBE900BC0230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8421AE122737DBE900BC0230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6718A59482FAD0C0CF7D57E /* Pods-SaraAttended.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaraAttended.debug.xcconfig"; path = "Target Support Files/Pods-SaraAttended/Pods-SaraAttended.debug.xcconfig"; sourceTree = "<group>"; };
+		E472A838A13FD7BFD9C4A051 /* Pods_SaraAttended.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaraAttended.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8421ADFE2737DBE400BC0230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81C93D0C1489811BC9C2B04 /* Pods_SaraAttended.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E282D2533C01DA24F347057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E472A838A13FD7BFD9C4A051 /* Pods_SaraAttended.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8400AC112737EC0B00D82C71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8400AC0B2737EBDD00D82C71 /* Day.swift */,
+				8400AC0D2737EBF500D82C71 /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8400AC182737EC6F00D82C71 /* Days */ = {
+			isa = PBXGroup;
+			children = (
+				8400AC2E2739A07E00D82C71 /* NewDayVC.swift */,
+				8400AC162737EC6900D82C71 /* DayAttendanceVC.swift */,
+				8400AC302739A0EF00D82C71 /* DaysVC.swift */,
+			);
+			path = Days;
+			sourceTree = "<group>";
+		};
+		8400AC1B2737ECC500D82C71 /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				8400AC2C2739A01300D82C71 /* StudentsVC.swift */,
+				8400AC322739A12D00D82C71 /* NewStudentVC.swift */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+		8400AC20273933A100D82C71 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				8400AC212739352000D82C71 /* StudentsService.swift */,
+				8400AC2327393E1F00D82C71 /* DaysService.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		8400AC2B27399B7700D82C71 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8400AC1E2737EDB600D82C71 /* TabVC.swift */,
+				8400AC1B2737ECC500D82C71 /* Students */,
+				8400AC182737EC6F00D82C71 /* Days */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8421ADF82737DBE400BC0230 = {
+			isa = PBXGroup;
+			children = (
+				8421AE032737DBE400BC0230 /* SaraAttended */,
+				8421AE022737DBE400BC0230 /* Products */,
+				B189C65D09C595F450110145 /* Pods */,
+				1E282D2533C01DA24F347057 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8421AE022737DBE400BC0230 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8421AE012737DBE400BC0230 /* SaraAttended.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8421AE032737DBE400BC0230 /* SaraAttended */ = {
+			isa = PBXGroup;
+			children = (
+				8400AC20273933A100D82C71 /* DataBase */,
+				8421AE042737DBE400BC0230 /* AppDelegate.swift */,
+				8421AE062737DBE400BC0230 /* SceneDelegate.swift */,
+				8400AC112737EC0B00D82C71 /* Models */,
+				8400AC2B27399B7700D82C71 /* Controllers */,
+				8421AE0D2737DBE900BC0230 /* Assets.xcassets */,
+				8421AE0F2737DBE900BC0230 /* LaunchScreen.storyboard */,
+				8400AC2927398F9E00D82C71 /* GoogleService-Info.plist */,
+				8421AE122737DBE900BC0230 /* Info.plist */,
+			);
+			path = SaraAttended;
+			sourceTree = "<group>";
+		};
+		B189C65D09C595F450110145 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6718A59482FAD0C0CF7D57E /* Pods-SaraAttended.debug.xcconfig */,
+				709771D0C9536E0256921C1A /* Pods-SaraAttended.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8421AE002737DBE400BC0230 /* SaraAttended */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8421AE152737DBE900BC0230 /* Build configuration list for PBXNativeTarget "SaraAttended" */;
+			buildPhases = (
+				A9F71B37851278DC6D8C2930 /* [CP] Check Pods Manifest.lock */,
+				8421ADFD2737DBE400BC0230 /* Sources */,
+				8421ADFE2737DBE400BC0230 /* Frameworks */,
+				8421ADFF2737DBE400BC0230 /* Resources */,
+				CCBBBF5D190F116A90B293EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaraAttended;
+			productName = SaraAttended;
+			productReference = 8421AE012737DBE400BC0230 /* SaraAttended.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8421ADF92737DBE400BC0230 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					8421AE002737DBE400BC0230 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 8421ADFC2737DBE400BC0230 /* Build configuration list for PBXProject "SaraAttended" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8421ADF82737DBE400BC0230;
+			productRefGroup = 8421AE022737DBE400BC0230 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8421AE002737DBE400BC0230 /* SaraAttended */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8421ADFF2737DBE400BC0230 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8421AE112737DBE900BC0230 /* LaunchScreen.storyboard in Resources */,
+				8400AC2A27398F9E00D82C71 /* GoogleService-Info.plist in Resources */,
+				8421AE0E2737DBE900BC0230 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9F71B37851278DC6D8C2930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaraAttended-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBBBF5D190F116A90B293EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaraAttended/Pods-SaraAttended-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaraAttended/Pods-SaraAttended-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaraAttended/Pods-SaraAttended-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8421ADFD2737DBE400BC0230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8400AC1F2737EDB600D82C71 /* TabVC.swift in Sources */,
+				8400AC2427393E1F00D82C71 /* DaysService.swift in Sources */,
+				8421AE052737DBE400BC0230 /* AppDelegate.swift in Sources */,
+				8400AC2D2739A01300D82C71 /* StudentsVC.swift in Sources */,
+				8400AC2F2739A07E00D82C71 /* NewDayVC.swift in Sources */,
+				8400AC222739352000D82C71 /* StudentsService.swift in Sources */,
+				8400AC0C2737EBDD00D82C71 /* Day.swift in Sources */,
+				8400AC332739A12D00D82C71 /* NewStudentVC.swift in Sources */,
+				8400AC172737EC6900D82C71 /* DayAttendanceVC.swift in Sources */,
+				8400AC312739A0EF00D82C71 /* DaysVC.swift in Sources */,
+				8400AC0E2737EBF500D82C71 /* Student.swift in Sources */,
+				8421AE072737DBE400BC0230 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8421AE0F2737DBE900BC0230 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8421AE102737DBE900BC0230 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8421AE132737DBE900BC0230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8421AE142737DBE900BC0230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8421AE162737DBE900BC0230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6718A59482FAD0C0CF7D57E /* Pods-SaraAttended.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2VKRHK5LM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaraAttended/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sara.SaraAttended;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8421AE172737DBE900BC0230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709771D0C9536E0256921C1A /* Pods-SaraAttended.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2VKRHK5LM7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaraAttended/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sara.SaraAttended;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8421ADFC2737DBE400BC0230 /* Build configuration list for PBXProject "SaraAttended" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8421AE132737DBE900BC0230 /* Debug */,
+				8421AE142737DBE900BC0230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8421AE152737DBE900BC0230 /* Build configuration list for PBXNativeTarget "SaraAttended" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8421AE162737DBE900BC0230 /* Debug */,
+				8421AE172737DBE900BC0230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8421ADF92737DBE400BC0230 /* Project object */;
+}
