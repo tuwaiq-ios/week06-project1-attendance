@@ -15,7 +15,17 @@ class DateViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let collectionView  = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     var students        = [Student]()
     var day             : Day?
-    var dayID           : String?
+    var dayID           : String
+    
+    init (dayID: String) {
+        self.dayID = dayID
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.dayID = ""
+        super.init(coder: coder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +37,8 @@ class DateViewController: UIViewController, UICollectionViewDelegate, UICollecti
             self.updateLabels()
         }
         
-        guard let dayid = dayID else { return }
-        
-        DayService.shared.dayListenr(dayId: dayid) { day in
+            
+        DayService.shared.dayListenr(dayId: dayID) { day in
             self.day = day
             self.updateLabels()
             
@@ -121,25 +130,24 @@ class DateViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "date", for: indexPath) as! DateCollectionViewCell
         let data = students[indexPath.row]
         
+        cell.studentNameLabel.text = data.studentName
+        
         let isStudentPresent = checkStudentPresent(studentId: data.id)
         
-        cell.studentNameLabel.text = data.studentName
-        if !cell.isSelected{
+        if isStudentPresent{
             cell.statLabel.text      = "A"
-            cell.statLabel.textColor = .red }
+            cell.statLabel.textColor = UIColor(red: 212.0/255.0, green: 38.0/255.0, blue: 28.0/255.0, alpha: 1.0)
+        }else{
+            cell.statLabel.text      = "P"
+            cell.statLabel.textColor = UIColor(red: 120.0/225.0, green: 148.0/225.0, blue: 234.0/225.0, alpha: 1.0)
+        }
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let data     = students[indexPath.row]
-//        if let cell  = collectionView.cellForItem(at: indexPath) as? DateCollectionViewCell {
-//
-//
-//                cell.statLabel.text       = "P"
-//                cell.statLabel.textColor  = .blue
-//                presentLabel.text         = "P : \(attendedStudents.count)"
-//                absentLabel.text          = "A : \(totalStudent)"
-//            }
+
         DayService.shared.switchStudentState(day: day!,
                                              studentId: data.id)
         

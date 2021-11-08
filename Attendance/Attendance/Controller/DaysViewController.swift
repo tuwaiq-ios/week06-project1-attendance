@@ -15,7 +15,6 @@ class DaysViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let collectionView  = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     let gradientLayer   = CAGradientLayer()
     var days            = [Day]()
-    var students        = [Student]()
     var studentCount    = 0
     
     override func viewDidLoad() {
@@ -132,14 +131,14 @@ class DaysViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let data                 = days[indexPath.row]
 
-        let nextVC               = DateViewController()
+        let nextVC               = DateViewController(dayID: data.id)
         
         let formatter            = DateFormatter()
         formatter.dateFormat     = "EEEE, MMM d"
         let formatedDate         = formatter.string(from: data.date)
      
         nextVC.title             = formatedDate
-        nextVC.dayID             = data.id
+
         navigationController?.pushViewController(nextVC, animated: true)
 
     }
