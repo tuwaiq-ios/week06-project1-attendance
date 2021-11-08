@@ -20,6 +20,8 @@
 		FAE89FC02737AFA4005C51A4 /* PrsentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE89FBF2737AFA4005C51A4 /* PrsentPage.swift */; };
 		FAE89FC82737DC9D005C51A4 /* piecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE89FC72737DC9D005C51A4 /* piecker.swift */; };
 		FAE89FCA2737E018005C51A4 /* days.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE89FC92737E018005C51A4 /* days.swift */; };
+		FAE89FCC27395E8B005C51A4 /* DaysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE89FCB27395E8B005C51A4 /* DaysService.swift */; };
+		FAE89FCE27395E9E005C51A4 /* StudentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE89FCD27395E9E005C51A4 /* StudentsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		FAE89FBF2737AFA4005C51A4 /* PrsentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrsentPage.swift; sourceTree = "<group>"; };
 		FAE89FC72737DC9D005C51A4 /* piecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = piecker.swift; sourceTree = "<group>"; };
 		FAE89FC92737E018005C51A4 /* days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = days.swift; sourceTree = "<group>"; };
+		FAE89FCB27395E8B005C51A4 /* DaysService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysService.swift; sourceTree = "<group>"; };
+		FAE89FCD27395E9E005C51A4 /* StudentsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				FAE89FC72737DC9D005C51A4 /* piecker.swift */,
 				FAE89FBF2737AFA4005C51A4 /* PrsentPage.swift */,
 				FAE89FBD2737AF42005C51A4 /* AddStudent.swift */,
+				FAE89FCD27395E9E005C51A4 /* StudentsService.swift */,
+				FAE89FCB27395E8B005C51A4 /* DaysService.swift */,
 				FAE89FB72737AE77005C51A4 /* Model.swift */,
 				FAE89FAA2737ABC2005C51A4 /* Assets.xcassets */,
 				FAE89FAC2737ABC2005C51A4 /* LaunchScreen.storyboard */,
@@ -229,7 +235,9 @@
 				FAE89FC82737DC9D005C51A4 /* piecker.swift in Sources */,
 				FAE89FC02737AFA4005C51A4 /* PrsentPage.swift in Sources */,
 				FAE89FA42737ABBD005C51A4 /* SceneDelegate.swift in Sources */,
+				FAE89FCE27395E9E005C51A4 /* StudentsService.swift in Sources */,
 				FAE89FBC2737AF17005C51A4 /* StudenrVC.swift in Sources */,
+				FAE89FCC27395E8B005C51A4 /* DaysService.swift in Sources */,
 				FAE89FBE2737AF42005C51A4 /* AddStudent.swift in Sources */,
 				FAE89FCA2737E018005C51A4 /* days.swift in Sources */,
 				FAE89FB82737AE77005C51A4 /* Model.swift in Sources */,

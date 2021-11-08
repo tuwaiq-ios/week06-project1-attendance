@@ -9,19 +9,19 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class AddStudent: UIViewController {
+class AddStudent: UIViewController , UITextFieldDelegate{
     
     var addstudentTxt = UITextField()
     let datePicker = UIDatePicker()
     let BtnOK = UIButton()
     
     
-    var callbackClosure: (() -> Void)?
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        callbackClosure?()
-    }
+//    var callbackClosure: (() -> Void)?
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        
+//        callbackClosure?()
+//    }
     
     
     
@@ -75,9 +75,9 @@ class AddStudent: UIViewController {
     }
     
     func createDatePicker(){
-        
-        addstudentTxt.textAlignment = .center
-        
+//
+//        addstudentTxt.textAlignment = .center
+//
 //        let toolbar = UIToolbar()
 //        toolbar.sizeToFit()
 //
@@ -85,10 +85,11 @@ class AddStudent: UIViewController {
 //        toolbar.setItems ([doneBtn], animated: true)
 //
 //        addstudentTxt.inputAccessoryView = toolbar
-        
+//
 //        datePicker.preferredDatePickerStyle = .wheels
 //        birthDateTxt.inputView = datePicker
 //        datePicker.datePickerMode = .date
+        
     }
     
     @objc func donePressed() {
@@ -105,21 +106,31 @@ class AddStudent: UIViewController {
 //            Students(name: addstudentTxt.text!)
 //        )
         
+        let name =  addstudentTxt.text ?? ""
+        let uuid = UUID().uuidString
+
+        StudentsService.shared.addStudent(
+            student: Students(name: name, id: uuid)
+        )
         
-        guard let add = addstudentTxt.text  else {return}
-        //guard let user = user else {return}
-        Firestore.firestore().collection("Students").addDocument(data:[
-            
-            "name" : add,
-            //"attendance" : true
-        ])
+        dismiss(animated: true, completion: nil)
         
-        addstudentTxt.text = ""
-    
-        dismiss(animated: true)
+//        let uuid = UUID().uuidString
+//        guard let add = addstudentTxt.text  else {return}
+//        //guard let user = user else {return}
+//        Firestore.firestore().collection("Students").addDocument(data:[
+//
+//            "name" : add,
+//            "id"  : uuid
+//            //"attendance" : true
+//        ])
+//
+//        addstudentTxt.text = ""
+//
+//        dismiss(animated: true)
         
         
-    }
+          }
     
 }
 
