@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>893825339313-urdlcq7ii4aafj5cnv2dnco3ip90c5fo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.893825339313-urdlcq7ii4aafj5cnv2dnco3ip90c5fo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBOlwjy0sO7tOlQ7s6LDazFF6lNG_hJwWk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>893825339313</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hanan.StudentsAttandance-hanan</string>
+	<key>PROJECT_ID</key>
+	<string>studentattandance-hanan</string>
+	<key>STORAGE_BUCKET</key>
+	<string>studentattandance-hanan.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:893825339313:ios:b125c9299ecb56f3103790</string>
+</dict>
+</plist>

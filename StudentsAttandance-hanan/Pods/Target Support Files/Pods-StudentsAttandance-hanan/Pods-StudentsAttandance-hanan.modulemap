@@ -1,0 +1,6 @@
+framework module Pods_StudentsAttandance_hanan {
+  umbrella header "Pods-StudentsAttandance-hanan-umbrella.h"
+
+  export *
+  module * { export * }
+}
