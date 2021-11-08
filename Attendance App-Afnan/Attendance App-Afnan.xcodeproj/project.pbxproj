@@ -7,37 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68059612273559F00051724D /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059611273559F00051724D /* AttendanceViewController.swift */; };
-		680596142735AF0E0051724D /* AttendanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680596132735AF0E0051724D /* AttendanceCell.swift */; };
+		68059616273807BC0051724D /* DaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059615273807BB0051724D /* DaysVC.swift */; };
+		68059619273807EA0051724D /* NewDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059618273807EA0051724D /* NewDayVC.swift */; };
+		6805961B273808000051724D /* DayAttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805961A273808000051724D /* DayAttendanceVC.swift */; };
+		6805961D273808230051724D /* StudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805961C273808230051724D /* StudentVC.swift */; };
+		6805961F273808380051724D /* NewStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805961E273808380051724D /* NewStudentVC.swift */; };
+		68059623273831DE0051724D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059622273831DE0051724D /* Day.swift */; };
+		68059625273831FC0051724D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059624273831FC0051724D /* Student.swift */; };
+		6805962A273988D70051724D /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059629273988D60051724D /* Students.swift */; };
+		6805962C273988EA0051724D /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805962B273988EA0051724D /* Days.swift */; };
 		68A357742732761C001D6460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357732732761C001D6460 /* AppDelegate.swift */; };
 		68A357762732761C001D6460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357752732761C001D6460 /* SceneDelegate.swift */; };
-		68A357782732761C001D6460 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357772732761C001D6460 /* StudentsViewController.swift */; };
 		68A3577D2732761D001D6460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A3577C2732761D001D6460 /* Assets.xcassets */; };
 		68A357802732761D001D6460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A3577E2732761D001D6460 /* LaunchScreen.storyboard */; };
 		68A3578827327643001D6460 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68A3578727327643001D6460 /* GoogleService-Info.plist */; };
-		68A3578C27329F6D001D6460 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3578B27329F6D001D6460 /* DaysViewController.swift */; };
 		68A3578E2732AA60001D6460 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3578D2732AA5F001D6460 /* TabBarController.swift */; };
-		68A357922732EBE2001D6460 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357912732EBE2001D6460 /* DateViewController.swift */; };
-		68A357962733BD6D001D6460 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357952733BD6D001D6460 /* DaysTableViewCell.swift */; };
 		A8C7EB245F09841500843B7C /* Pods_Attendance_App_Afnan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4FF1A2EB13ABFD2DB72FD7 /* Pods_Attendance_App_Afnan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A4FECDBDB1C00D6CCC5FFEE /* Pods-Attendance App-Afnan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance App-Afnan.release.xcconfig"; path = "Target Support Files/Pods-Attendance App-Afnan/Pods-Attendance App-Afnan.release.xcconfig"; sourceTree = "<group>"; };
-		68059611273559F00051724D /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
-		680596132735AF0E0051724D /* AttendanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCell.swift; sourceTree = "<group>"; };
+		68059615273807BB0051724D /* DaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysVC.swift; sourceTree = "<group>"; };
+		68059618273807EA0051724D /* NewDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayVC.swift; sourceTree = "<group>"; };
+		6805961A273808000051724D /* DayAttendanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAttendanceVC.swift; sourceTree = "<group>"; };
+		6805961C273808230051724D /* StudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentVC.swift; sourceTree = "<group>"; };
+		6805961E273808380051724D /* NewStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentVC.swift; sourceTree = "<group>"; };
+		68059622273831DE0051724D /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		68059624273831FC0051724D /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		68059629273988D60051724D /* Students.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Students.swift; sourceTree = "<group>"; };
+		6805962B273988EA0051724D /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		68A357702732761C001D6460 /* Attendance App-Afnan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attendance App-Afnan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A357732732761C001D6460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A357752732761C001D6460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68A357772732761C001D6460 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		68A3577C2732761D001D6460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68A3577F2732761D001D6460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68A357812732761D001D6460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68A3578727327643001D6460 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		68A3578B27329F6D001D6460 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
 		68A3578D2732AA5F001D6460 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		68A357912732EBE2001D6460 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
-		68A357952733BD6D001D6460 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
 		CC4FF1A2EB13ABFD2DB72FD7 /* Pods_Attendance_App_Afnan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance_App_Afnan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6866471D21D7B62A5AEE1FC /* Pods-Attendance App-Afnan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance App-Afnan.debug.xcconfig"; path = "Target Support Files/Pods-Attendance App-Afnan/Pods-Attendance App-Afnan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +66,43 @@
 				CC4FF1A2EB13ABFD2DB72FD7 /* Pods_Attendance_App_Afnan.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68059617273807C40051724D /* Dayes */ = {
+			isa = PBXGroup;
+			children = (
+				68059615273807BB0051724D /* DaysVC.swift */,
+				68059618273807EA0051724D /* NewDayVC.swift */,
+				6805961A273808000051724D /* DayAttendanceVC.swift */,
+			);
+			path = Dayes;
+			sourceTree = "<group>";
+		};
+		680596202738083E0051724D /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				6805961C273808230051724D /* StudentVC.swift */,
+				6805961E273808380051724D /* NewStudentVC.swift */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+		68059621273831BA0051724D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68059622273831DE0051724D /* Day.swift */,
+				68059624273831FC0051724D /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68059628273988B40051724D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				68059629273988D60051724D /* Students.swift */,
+				6805962B273988EA0051724D /* Days.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		68A357672732761C001D6460 = {
@@ -87,12 +130,10 @@
 				68A357732732761C001D6460 /* AppDelegate.swift */,
 				68A357752732761C001D6460 /* SceneDelegate.swift */,
 				68A3578D2732AA5F001D6460 /* TabBarController.swift */,
-				68A357772732761C001D6460 /* StudentsViewController.swift */,
-				68A3578B27329F6D001D6460 /* DaysViewController.swift */,
-				68A357952733BD6D001D6460 /* DaysTableViewCell.swift */,
-				68059611273559F00051724D /* AttendanceViewController.swift */,
-				680596132735AF0E0051724D /* AttendanceCell.swift */,
-				68A357912732EBE2001D6460 /* DateViewController.swift */,
+				68059628273988B40051724D /* Database */,
+				68059621273831BA0051724D /* Models */,
+				680596202738083E0051724D /* Students */,
+				68059617273807C40051724D /* Dayes */,
 				68A3577C2732761D001D6460 /* Assets.xcassets */,
 				68A3577E2732761D001D6460 /* LaunchScreen.storyboard */,
 				68A357812732761D001D6460 /* Info.plist */,
@@ -224,15 +265,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				680596142735AF0E0051724D /* AttendanceCell.swift in Sources */,
-				68A357782732761C001D6460 /* StudentsViewController.swift in Sources */,
+				68059619273807EA0051724D /* NewDayVC.swift in Sources */,
 				68A357742732761C001D6460 /* AppDelegate.swift in Sources */,
-				68A357922732EBE2001D6460 /* DateViewController.swift in Sources */,
 				68A357762732761C001D6460 /* SceneDelegate.swift in Sources */,
-				68A357962733BD6D001D6460 /* DaysTableViewCell.swift in Sources */,
+				6805961B273808000051724D /* DayAttendanceVC.swift in Sources */,
+				6805961D273808230051724D /* StudentVC.swift in Sources */,
+				68059623273831DE0051724D /* Day.swift in Sources */,
 				68A3578E2732AA60001D6460 /* TabBarController.swift in Sources */,
-				68A3578C27329F6D001D6460 /* DaysViewController.swift in Sources */,
-				68059612273559F00051724D /* AttendanceViewController.swift in Sources */,
+				68059616273807BC0051724D /* DaysVC.swift in Sources */,
+				6805961F273808380051724D /* NewStudentVC.swift in Sources */,
+				6805962A273988D70051724D /* Students.swift in Sources */,
+				6805962C273988EA0051724D /* Days.swift in Sources */,
+				68059625273831FC0051724D /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

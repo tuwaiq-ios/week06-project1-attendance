@@ -22,14 +22,15 @@ class TabBarController: UITabBarController {
 
     func setupVCs() {
           viewControllers = [
-              createNavController(for: StudentsViewController(), title: NSLocalizedString("Students", comment: ""), image: UIImage(systemName: "person.3")!),
-              createNavController(for: DaysViewController(), title: NSLocalizedString("Days", comment: ""), image: UIImage(systemName: "rectangle.and.pencil.and.ellipsis")!),
+              createNavController(for: StudentsVC(), title: NSLocalizedString("Students", comment: ""), image: UIImage(systemName: "person.3")!),
+              createNavController(for: DaysVC(), title: NSLocalizedString("Days", comment: ""), image: UIImage(systemName: "rectangle.and.pencil.and.ellipsis")!),
              
           ]
       }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
           view.backgroundColor = .white
         UITabBar.appearance().barTintColor = .white
            tabBar.backgroundColor = .systemMint
