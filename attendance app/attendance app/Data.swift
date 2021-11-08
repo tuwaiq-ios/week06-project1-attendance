@@ -5,21 +5,26 @@
 //  Created by Ahmed Assiri on 29/03/1443 AH.
 //
 
-import UIKit
-
-var dateP : Array<Day> = []
-
+import Foundation
+import FirebaseFirestore
 
 struct Day {
-    let date : Date
-}
-struct Students {
-    let name : String
-}
-class showButton: UIViewController{
+    let id: String
+    let timestamp: Timestamp
+    var pStudents: Array<String>
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .orange
+    func getNiceDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        
+        return dateFormatter.string(from: timestamp.dateValue())
     }
+}
+
+
+
+struct Student {
+    let name: String
+    let id: String
 }

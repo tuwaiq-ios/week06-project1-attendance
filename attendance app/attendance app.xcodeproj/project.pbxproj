@@ -10,17 +10,17 @@
 		9A087D6485F12A2E1325D960 /* Pods_attendance_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02BFDB6A0C9D0F5542B93D5 /* Pods_attendance_app.framework */; };
 		FC0C72102733AED300FD5C76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C720F2733AED300FD5C76 /* AppDelegate.swift */; };
 		FC0C72122733AED300FD5C76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C72112733AED300FD5C76 /* SceneDelegate.swift */; };
-		FC0C72142733AED300FD5C76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C72132733AED300FD5C76 /* ViewController.swift */; };
 		FC0C72192733AED500FD5C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0C72182733AED500FD5C76 /* Assets.xcassets */; };
 		FC0C721C2733AED500FD5C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0C721A2733AED500FD5C76 /* LaunchScreen.storyboard */; };
 		FC0C72242733B08200FD5C76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC0C72232733B08200FD5C76 /* GoogleService-Info.plist */; };
 		FC0C72262733B81100FD5C76 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C72252733B81100FD5C76 /* Data.swift */; };
 		FC0C727027371B7B00FD5C76 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C726F27371B7B00FD5C76 /* Tabbar.swift */; };
-		FC0C727227371BB500FD5C76 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C727127371BB500FD5C76 /* Student.swift */; };
-		FC0C727427371BDE00FD5C76 /* Prsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C727327371BDE00FD5C76 /* Prsent.swift */; };
-		FC0C727627371C1700FD5C76 /* List Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C727527371C1700FD5C76 /* List Student.swift */; };
+		FC0C727227371BB500FD5C76 /* StudentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C727127371BB500FD5C76 /* StudentsVC.swift */; };
 		FC0C727827371C3C00FD5C76 /* Dars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C727727371C3C00FD5C76 /* Dars.swift */; };
-		FC0C727A27371C6A00FD5C76 /* Piecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C727927371C6A00FD5C76 /* Piecker.swift */; };
+		FC2F12BF2739CF0800534584 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F12BE2739CF0800534584 /* Database.swift */; };
+		FC2F12C12739D05500534584 /* DayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F12C02739D05500534584 /* DayVC.swift */; };
+		FC2F12C32739D07F00534584 /* NewDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F12C22739D07F00534584 /* NewDay.swift */; };
+		FC2F12C52739D10700534584 /* AddStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F12C42739D10700534584 /* AddStudent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,18 +30,18 @@
 		FC0C720C2733AED300FD5C76 /* attendance app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "attendance app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0C720F2733AED300FD5C76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC0C72112733AED300FD5C76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC0C72132733AED300FD5C76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC0C72182733AED500FD5C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC0C721B2733AED500FD5C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC0C721D2733AED500FD5C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC0C72232733B08200FD5C76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC0C72252733B81100FD5C76 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FC0C726F27371B7B00FD5C76 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
-		FC0C727127371BB500FD5C76 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		FC0C727327371BDE00FD5C76 /* Prsent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prsent.swift; sourceTree = "<group>"; };
-		FC0C727527371C1700FD5C76 /* List Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List Student.swift"; sourceTree = "<group>"; };
+		FC0C727127371BB500FD5C76 /* StudentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsVC.swift; sourceTree = "<group>"; };
 		FC0C727727371C3C00FD5C76 /* Dars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dars.swift; sourceTree = "<group>"; };
-		FC0C727927371C6A00FD5C76 /* Piecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piecker.swift; sourceTree = "<group>"; };
+		FC2F12BE2739CF0800534584 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		FC2F12C02739D05500534584 /* DayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayVC.swift; sourceTree = "<group>"; };
+		FC2F12C22739D07F00534584 /* NewDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDay.swift; sourceTree = "<group>"; };
+		FC2F12C42739D10700534584 /* AddStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,19 +97,27 @@
 				FC0C72232733B08200FD5C76 /* GoogleService-Info.plist */,
 				FC0C720F2733AED300FD5C76 /* AppDelegate.swift */,
 				FC0C72112733AED300FD5C76 /* SceneDelegate.swift */,
-				FC0C72252733B81100FD5C76 /* Data.swift */,
-				FC0C727127371BB500FD5C76 /* Student.swift */,
+				FC2F12C62739DB0900534584 /* Model */,
 				FC0C726F27371B7B00FD5C76 /* Tabbar.swift */,
-				FC0C727727371C3C00FD5C76 /* Dars.swift */,
-				FC0C727327371BDE00FD5C76 /* Prsent.swift */,
-				FC0C727527371C1700FD5C76 /* List Student.swift */,
-				FC0C727927371C6A00FD5C76 /* Piecker.swift */,
-				FC0C72132733AED300FD5C76 /* ViewController.swift */,
+				FC2F12C02739D05500534584 /* DayVC.swift */,
+				FC2F12C22739D07F00534584 /* NewDay.swift */,
+				FC0C727127371BB500FD5C76 /* StudentsVC.swift */,
+				FC2F12C42739D10700534584 /* AddStudent.swift */,
+				FC0C72252733B81100FD5C76 /* Data.swift */,
 				FC0C72182733AED500FD5C76 /* Assets.xcassets */,
 				FC0C721A2733AED500FD5C76 /* LaunchScreen.storyboard */,
 				FC0C721D2733AED500FD5C76 /* Info.plist */,
 			);
 			path = "attendance app";
+			sourceTree = "<group>";
+		};
+		FC2F12C62739DB0900534584 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F12BE2739CF0800534584 /* Database.swift */,
+				FC0C727727371C3C00FD5C76 /* Dars.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,16 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC0C727627371C1700FD5C76 /* List Student.swift in Sources */,
-				FC0C727A27371C6A00FD5C76 /* Piecker.swift in Sources */,
-				FC0C72142733AED300FD5C76 /* ViewController.swift in Sources */,
-				FC0C727227371BB500FD5C76 /* Student.swift in Sources */,
+				FC2F12BF2739CF0800534584 /* Database.swift in Sources */,
+				FC2F12C52739D10700534584 /* AddStudent.swift in Sources */,
+				FC0C727227371BB500FD5C76 /* StudentsVC.swift in Sources */,
+				FC2F12C12739D05500534584 /* DayVC.swift in Sources */,
 				FC0C727027371B7B00FD5C76 /* Tabbar.swift in Sources */,
 				FC0C72102733AED300FD5C76 /* AppDelegate.swift in Sources */,
 				FC0C72122733AED300FD5C76 /* SceneDelegate.swift in Sources */,
 				FC0C72262733B81100FD5C76 /* Data.swift in Sources */,
 				FC0C727827371C3C00FD5C76 /* Dars.swift in Sources */,
-				FC0C727427371BDE00FD5C76 /* Prsent.swift in Sources */,
+				FC2F12C32739D07F00534584 /* NewDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
