@@ -18,11 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UITabBarControllerDeleg
             window?.windowScene = windowScene
             window?.makeKeyAndVisible()
             let tabBar = UITabBarController()
-            let profile = UINavigationController(rootViewController: DayController())
+            let profile = UINavigationController(rootViewController: DaysVC())
             profile.tabBarItem.title = "Days"
             profile.tabBarItem.image = UIImage(systemName: "calendar.day.timeline.leading")!
         
-            let home = UINavigationController(rootViewController:StudentsController())
+            let home = UINavigationController(rootViewController:StudentsVC())
             home.tabBarItem.title = "Students"
             home.tabBarItem.image = UIImage(systemName: "person.3")!
         

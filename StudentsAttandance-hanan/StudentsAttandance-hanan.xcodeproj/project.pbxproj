@@ -15,10 +15,13 @@
 		860CE72A273285370025F4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860CE729273285370025F4CA /* Assets.xcassets */; };
 		860CE72D273285370025F4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860CE72B273285370025F4CA /* LaunchScreen.storyboard */; };
 		860CE735273286140025F4CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 860CE734273286140025F4CA /* GoogleService-Info.plist */; };
-		860CE737273287EC0025F4CA /* StudentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE736273287EC0025F4CA /* StudentsController.swift */; };
-		860CE739273288080025F4CA /* DayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE738273288080025F4CA /* DayController.swift */; };
-		8657B752273410CF005FDFDE /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8657B751273410CF005FDFDE /* DaysTableViewCell.swift */; };
-		865E4F9227359BD500505A33 /* AttandanceControllr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E4F9127359BD500505A33 /* AttandanceControllr.swift */; };
+		860CE737273287EC0025F4CA /* StudentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE736273287EC0025F4CA /* StudentsVC.swift */; };
+		860CE739273288080025F4CA /* DaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CE738273288080025F4CA /* DaysVC.swift */; };
+		865E4F9227359BD500505A33 /* DayAttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E4F9127359BD500505A33 /* DayAttendanceVC.swift */; };
+		8675122E27397AC30074F9B0 /* NewDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8675122D27397AC30074F9B0 /* NewDayVC.swift */; };
+		8675123027397BEF0074F9B0 /* NewStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8675122F27397BEF0074F9B0 /* NewStudentVC.swift */; };
+		8675123227397C390074F9B0 /* StudentsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8675123127397C390074F9B0 /* StudentsServices.swift */; };
+		8675123427397C740074F9B0 /* DayServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8675123327397C740074F9B0 /* DayServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +37,13 @@
 		860CE72C273285370025F4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		860CE72E273285370025F4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		860CE734273286140025F4CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		860CE736273287EC0025F4CA /* StudentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsController.swift; sourceTree = "<group>"; };
-		860CE738273288080025F4CA /* DayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayController.swift; sourceTree = "<group>"; };
-		8657B751273410CF005FDFDE /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
-		865E4F9127359BD500505A33 /* AttandanceControllr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttandanceControllr.swift; sourceTree = "<group>"; tabWidth = 3; };
+		860CE736273287EC0025F4CA /* StudentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsVC.swift; sourceTree = "<group>"; };
+		860CE738273288080025F4CA /* DaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysVC.swift; sourceTree = "<group>"; };
+		865E4F9127359BD500505A33 /* DayAttendanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAttendanceVC.swift; sourceTree = "<group>"; tabWidth = 3; };
+		8675122D27397AC30074F9B0 /* NewDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayVC.swift; sourceTree = "<group>"; };
+		8675122F27397BEF0074F9B0 /* NewStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentVC.swift; sourceTree = "<group>"; };
+		8675123127397C390074F9B0 /* StudentsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsServices.swift; sourceTree = "<group>"; };
+		8675123327397C740074F9B0 /* DayServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +104,13 @@
 				860CE729273285370025F4CA /* Assets.xcassets */,
 				860CE72B273285370025F4CA /* LaunchScreen.storyboard */,
 				860CE72E273285370025F4CA /* Info.plist */,
-				860CE736273287EC0025F4CA /* StudentsController.swift */,
-				860CE738273288080025F4CA /* DayController.swift */,
-				8657B751273410CF005FDFDE /* DaysTableViewCell.swift */,
-				865E4F9127359BD500505A33 /* AttandanceControllr.swift */,
+				860CE736273287EC0025F4CA /* StudentsVC.swift */,
+				860CE738273288080025F4CA /* DaysVC.swift */,
+				865E4F9127359BD500505A33 /* DayAttendanceVC.swift */,
+				8675122D27397AC30074F9B0 /* NewDayVC.swift */,
+				8675122F27397BEF0074F9B0 /* NewStudentVC.swift */,
+				8675123127397C390074F9B0 /* StudentsServices.swift */,
+				8675123327397C740074F9B0 /* DayServices.swift */,
 			);
 			path = "StudentsAttandance-hanan";
 			sourceTree = "<group>";
@@ -223,12 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				860CE725273285340025F4CA /* ViewController.swift in Sources */,
-				860CE737273287EC0025F4CA /* StudentsController.swift in Sources */,
-				865E4F9227359BD500505A33 /* AttandanceControllr.swift in Sources */,
+				860CE737273287EC0025F4CA /* StudentsVC.swift in Sources */,
+				865E4F9227359BD500505A33 /* DayAttendanceVC.swift in Sources */,
 				860CE721273285340025F4CA /* AppDelegate.swift in Sources */,
+				8675122E27397AC30074F9B0 /* NewDayVC.swift in Sources */,
+				8675123227397C390074F9B0 /* StudentsServices.swift in Sources */,
 				860CE723273285340025F4CA /* SceneDelegate.swift in Sources */,
-				8657B752273410CF005FDFDE /* DaysTableViewCell.swift in Sources */,
-				860CE739273288080025F4CA /* DayController.swift in Sources */,
+				860CE739273288080025F4CA /* DaysVC.swift in Sources */,
+				8675123427397C740074F9B0 /* DayServices.swift in Sources */,
+				8675123027397BEF0074F9B0 /* NewStudentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
