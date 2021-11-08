@@ -13,13 +13,15 @@
 		CC2473972733AC2C00AE5094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2473962733AC2C00AE5094 /* Assets.xcassets */; };
 		CC24739A2733AC2C00AE5094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2473982733AC2C00AE5094 /* LaunchScreen.storyboard */; };
 		CC2473A22733ADBE00AE5094 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC2473A12733ADBE00AE5094 /* GoogleService-Info.plist */; };
-		CC5BD84D2733D2B2002A441F /* DatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD84C2733D2B2002A441F /* DatePage.swift */; };
-		CCFBA5AF2736D4C7006FF3B1 /* Date_TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBA5AE2736D4C7006FF3B1 /* Date_TabBar.swift */; };
-		CCFBA5B12736D4D1006FF3B1 /* Student_TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBA5B02736D4D1006FF3B1 /* Student_TabBar.swift */; };
-		CCFBA5B32736D4DA006FF3B1 /* PrsentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBA5B22736D4DA006FF3B1 /* PrsentPage.swift */; };
-		CCFBA5B52736D4E6006FF3B1 /* StudentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBA5B42736D4E6006FF3B1 /* StudentPage.swift */; };
-		CCFBA5B72736D4F0006FF3B1 /* 1 TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBA5B62736D4F0006FF3B1 /* 1 TabBar.swift */; };
-		CCFBA5B92736D4FA006FF3B1 /* File6.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBA5B82736D4FA006FF3B1 /* File6.swift */; };
+		CCA106B82739A87A008ED0E2 /* 1 TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106B72739A87A008ED0E2 /* 1 TabBar.swift */; };
+		CCA106BA2739A883008ED0E2 /* 3 Date_TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106B92739A883008ED0E2 /* 3 Date_TabBar.swift */; };
+		CCA106BC2739A88A008ED0E2 /* 4 Student_TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106BB2739A88A008ED0E2 /* 4 Student_TabBar.swift */; };
+		CCA106BE2739A894008ED0E2 /* 2 DatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106BD2739A894008ED0E2 /* 2 DatePage.swift */; };
+		CCA106C02739A89D008ED0E2 /* 6 PrsentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106BF2739A89D008ED0E2 /* 6 PrsentPage.swift */; };
+		CCA106C22739A8A7008ED0E2 /* 5 StudentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106C12739A8A7008ED0E2 /* 5 StudentPage.swift */; };
+		CCA106C42739A8B2008ED0E2 /* 7 StudentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106C32739A8B2008ED0E2 /* 7 StudentsService.swift */; };
+		CCA106C62739AA55008ED0E2 /* 8 DaysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106C52739AA55008ED0E2 /* 8 DaysService.swift */; };
+		CCA106C82739AA63008ED0E2 /* 9 Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA106C72739AA62008ED0E2 /* 9 Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +35,15 @@
 		CC2473992733AC2C00AE5094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC24739B2733AC2C00AE5094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2473A12733ADBE00AE5094 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CC5BD84C2733D2B2002A441F /* DatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePage.swift; sourceTree = "<group>"; };
-		CCFBA5AE2736D4C7006FF3B1 /* Date_TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_TabBar.swift; sourceTree = "<group>"; };
-		CCFBA5B02736D4D1006FF3B1 /* Student_TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_TabBar.swift; sourceTree = "<group>"; };
-		CCFBA5B22736D4DA006FF3B1 /* PrsentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrsentPage.swift; sourceTree = "<group>"; };
-		CCFBA5B42736D4E6006FF3B1 /* StudentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentPage.swift; sourceTree = "<group>"; };
-		CCFBA5B62736D4F0006FF3B1 /* 1 TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1 TabBar.swift"; sourceTree = "<group>"; };
-		CCFBA5B82736D4FA006FF3B1 /* File6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File6.swift; sourceTree = "<group>"; };
+		CCA106B72739A87A008ED0E2 /* 1 TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1 TabBar.swift"; sourceTree = "<group>"; };
+		CCA106B92739A883008ED0E2 /* 3 Date_TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3 Date_TabBar.swift"; sourceTree = "<group>"; };
+		CCA106BB2739A88A008ED0E2 /* 4 Student_TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4 Student_TabBar.swift"; sourceTree = "<group>"; };
+		CCA106BD2739A894008ED0E2 /* 2 DatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2 DatePage.swift"; sourceTree = "<group>"; };
+		CCA106BF2739A89D008ED0E2 /* 6 PrsentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6 PrsentPage.swift"; sourceTree = "<group>"; };
+		CCA106C12739A8A7008ED0E2 /* 5 StudentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5 StudentPage.swift"; sourceTree = "<group>"; };
+		CCA106C32739A8B2008ED0E2 /* 7 StudentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7 StudentsService.swift"; sourceTree = "<group>"; };
+		CCA106C52739AA55008ED0E2 /* 8 DaysService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8 DaysService.swift"; sourceTree = "<group>"; };
+		CCA106C72739AA62008ED0E2 /* 9 Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9 Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +94,15 @@
 				CC2473962733AC2C00AE5094 /* Assets.xcassets */,
 				CC2473982733AC2C00AE5094 /* LaunchScreen.storyboard */,
 				CC24739B2733AC2C00AE5094 /* Info.plist */,
-				CCFBA5B62736D4F0006FF3B1 /* 1 TabBar.swift */,
-				CC5BD84C2733D2B2002A441F /* DatePage.swift */,
-				CCFBA5AE2736D4C7006FF3B1 /* Date_TabBar.swift */,
-				CCFBA5B02736D4D1006FF3B1 /* Student_TabBar.swift */,
-				CCFBA5B22736D4DA006FF3B1 /* PrsentPage.swift */,
-				CCFBA5B42736D4E6006FF3B1 /* StudentPage.swift */,
-				CCFBA5B82736D4FA006FF3B1 /* File6.swift */,
+				CCA106B72739A87A008ED0E2 /* 1 TabBar.swift */,
+				CCA106B92739A883008ED0E2 /* 3 Date_TabBar.swift */,
+				CCA106BD2739A894008ED0E2 /* 2 DatePage.swift */,
+				CCA106BB2739A88A008ED0E2 /* 4 Student_TabBar.swift */,
+				CCA106C12739A8A7008ED0E2 /* 5 StudentPage.swift */,
+				CCA106BF2739A89D008ED0E2 /* 6 PrsentPage.swift */,
+				CCA106C32739A8B2008ED0E2 /* 7 StudentsService.swift */,
+				CCA106C52739AA55008ED0E2 /* 8 DaysService.swift */,
+				CCA106C72739AA62008ED0E2 /* 9 Data.swift */,
 			);
 			path = Attendance;
 			sourceTree = "<group>";
@@ -225,14 +231,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC24738E2733AC2B00AE5094 /* AppDelegate.swift in Sources */,
-				CCFBA5B92736D4FA006FF3B1 /* File6.swift in Sources */,
-				CCFBA5B32736D4DA006FF3B1 /* PrsentPage.swift in Sources */,
-				CC5BD84D2733D2B2002A441F /* DatePage.swift in Sources */,
-				CCFBA5B72736D4F0006FF3B1 /* 1 TabBar.swift in Sources */,
+				CCA106C82739AA63008ED0E2 /* 9 Data.swift in Sources */,
+				CCA106BC2739A88A008ED0E2 /* 4 Student_TabBar.swift in Sources */,
+				CCA106BA2739A883008ED0E2 /* 3 Date_TabBar.swift in Sources */,
+				CCA106B82739A87A008ED0E2 /* 1 TabBar.swift in Sources */,
+				CCA106BE2739A894008ED0E2 /* 2 DatePage.swift in Sources */,
 				CC2473902733AC2B00AE5094 /* SceneDelegate.swift in Sources */,
-				CCFBA5AF2736D4C7006FF3B1 /* Date_TabBar.swift in Sources */,
-				CCFBA5B12736D4D1006FF3B1 /* Student_TabBar.swift in Sources */,
-				CCFBA5B52736D4E6006FF3B1 /* StudentPage.swift in Sources */,
+				CCA106C62739AA55008ED0E2 /* 8 DaysService.swift in Sources */,
+				CCA106C02739A89D008ED0E2 /* 6 PrsentPage.swift in Sources */,
+				CCA106C42739A8B2008ED0E2 /* 7 StudentsService.swift in Sources */,
+				CCA106C22739A8A7008ED0E2 /* 5 StudentPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

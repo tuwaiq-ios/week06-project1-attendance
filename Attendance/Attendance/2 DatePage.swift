@@ -1,11 +1,14 @@
 //
+//  File4.swift
 //  Attendance
 //
-//  Created by Fawaz on 04/11/2021.
+//  Created by Fawaz on 08/11/2021.
 //
 
 import UIKit
-
+import Firebase
+import FirebaseFirestore
+//==========================================================================
 class DatePage: UIViewController {
   
   var enterDateTextF = UITextField()
@@ -43,17 +46,39 @@ class DatePage: UIViewController {
     view.addSubview(daySelectOKButton)
     daySelectOKButton.translatesAutoresizingMaskIntoConstraints = false
     
+    daySelectOKButton.backgroundColor = .systemBlue
     daySelectOKButton.setTitle("OK", for: .normal)
-    daySelectOKButton.backgroundColor = UIColor.blue
-    daySelectOKButton.addTarget(self, action: #selector(butunp), for: .touchUpInside)
     
+    daySelectOKButton.addTarget(self,
+                                action: #selector(butunp),
+                                for: .touchUpInside)
+    
+    func buttonAction(sender: UIButton!) {
+      
+      let btnsendtag: UIButton = sender
+      
+      if btnsendtag.tag == 1 {
+        
+        dismiss(animated: true, completion: nil)
+      }
+    }
     NSLayoutConstraint.activate([
       daySelectOKButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       daySelectOKButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300),
-      
+
       daySelectOKButton.heightAnchor.constraint(equalToConstant: 50),
       daySelectOKButton.widthAnchor.constraint(equalToConstant: 300)
     ])
+  }
+  //==========================================================================
+  override func viewDidLoad(){
+    super.viewDidLoad()
+    
+    createDatePicker()
+    birthDateTxt_func()
+    daySelectOKButton_func()
+    
+    view.backgroundColor = .white
   }
   //==========================================================================
   func createDatePicker(){
@@ -63,9 +88,8 @@ class DatePage: UIViewController {
     let toolbar = UIToolbar()
     toolbar.sizeToFit()
     
-    let doneBtn = UIBarButtonItem(barButtonSystemItem: .done,
-                                  target: nil,
-                                  action: #selector (donePressed))
+    let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector (donePressed))
+    
     toolbar.setItems ([doneBtn], animated: true)
     
     enterDateTextF.inputAccessoryView = toolbar
@@ -73,24 +97,6 @@ class DatePage: UIViewController {
     datePicker.preferredDatePickerStyle = .wheels
     enterDateTextF.inputView = datePicker
     datePicker.datePickerMode = .date
-  }
-  //==========================================================================
-  override func viewDidLoad(){
-    super.viewDidLoad()
-    
-    birthDateTxt_func()
-    daySelectOKButton_func()
-    createDatePicker()
-    
-    view.backgroundColor = .white
-    
-    func buttonAction(sender: UIButton!) {
-      
-      let btnsendtag: UIButton = sender
-      if btnsendtag.tag == 1 {
-        dismiss(animated: true, completion: nil)
-      }
-    }
   }
   //==========================================================================
   @objc func donePressed() {
@@ -101,13 +107,24 @@ class DatePage: UIViewController {
     
     enterDateTextF.text = formatter.string(from: datePicker.date)
     self.view.endEditing(true)
+  }
+  //==========================================================================
+  @objc func butunp(){
     
-    dateP.append(Day(date: datePicker.date))
+    let date = datePicker.date
+    let uuid = UUID().uuidString
+    
+    DaysService.shared.addDay(
+      
+      day: Day(
+        timestamp: Timestamp(date: date),
+        pStudents: [],
+        id: uuid
+      )
+    )
+    dismiss(animated: true, completion: nil)
   }
   //==========================================================================
-  @objc func butunp() {
-    dismiss(animated: true)
-  }
-  //==========================================================================
-
 } //class end
+
+

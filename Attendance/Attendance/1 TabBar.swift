@@ -1,11 +1,12 @@
 //
+//  File1.swift
 //  Attendance
 //
-//  Created by Fawaz on 06/11/2021.
+//  Created by Fawaz on 08/11/2021.
 //
 
 import UIKit
-
+//============================================================================
 class TabBar: UITabBarController, UITabBarControllerDelegate {
   
   //==========================================================================
@@ -13,17 +14,17 @@ class TabBar: UITabBarController, UITabBarControllerDelegate {
     super.viewDidLoad()
     
     delegate = self
-    
+
     let item1 = Date_TabBar()
     let item2 = Student_TabBar()
-    
+
     let icon1 = UITabBarItem(
-      title: "Date", image: UIImage(systemName: "calendar.circle"),
+      title: "days", image: UIImage(systemName: "calendar.circle"),
       selectedImage: UIImage(systemName: "calendar.circle")
     )
     
     let icon2 = UITabBarItem(
-      title: "Students", image: UIImage(systemName: "person.circle"),
+      title: "students", image: UIImage(systemName: "person.circle"),
       selectedImage: UIImage(systemName: "person.circle")
     )
     
@@ -31,6 +32,7 @@ class TabBar: UITabBarController, UITabBarControllerDelegate {
     item2.tabBarItem = icon2
     
     let controllers = [item1,item2]
+    
     self.viewControllers = controllers
   }
   //==========================================================================
@@ -38,12 +40,9 @@ class TabBar: UITabBarController, UITabBarControllerDelegate {
     super.viewWillAppear(animated)
   }
   //==========================================================================
-  func tabBarController(_ tabBarController: UITabBarController,
-                        shouldSelect viewController: UIViewController) -> Bool {
-    
+  func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
     print("Should select viewController: \(viewController.title ?? "") ?")
     return true;
   }
   //==========================================================================
-
-} //class end
+} // end class

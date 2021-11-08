@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene =  windowScene
     window?.rootViewController = TabBar()
-    //        window?.rootViewController = TabBar()
     window?.makeKeyAndVisible()
   }
   

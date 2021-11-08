@@ -1,26 +1,19 @@
 //
+//  File6.swift
 //  Attendance
 //
-//  Created by Fawaz on 06/11/2021.
+//  Created by Fawaz on 08/11/2021.
 //
 
 import UIKit
 import Firebase
 import FirebaseFirestore
-
-//============================================================================
-class StudentPage: UIViewController {
+//==========================================================================
+class AddStudent: UIViewController, UITextFieldDelegate {
   
   var addstudentTxt = UITextField()
   let datePicker = UIDatePicker()
   let BtnOK = UIButton()
-  var callbackClosure: (() -> Void)?
-  //==========================================================================
-  override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-    
-    callbackClosure?()
-  }
   //==========================================================================
   override func viewDidLoad(){
     super.viewDidLoad()
@@ -45,23 +38,24 @@ class StudentPage: UIViewController {
       addstudentTxt.centerYAnchor.constraint(equalTo: view.centerYAnchor),
       addstudentTxt.widthAnchor.constraint(equalToConstant: 300)
     ])
-    
     view.addSubview(BtnOK)
     BtnOK.translatesAutoresizingMaskIntoConstraints = false
-    
-    BtnOK.addTarget(self, action: #selector(donePressed), for: .touchUpInside)
     
     BtnOK.backgroundColor = UIColor.orange
     BtnOK.setTitle("OK", for: .normal)
     
+    BtnOK.addTarget(self,
+                    action: #selector(donePressed),
+                    for: .touchUpInside)
+    
     NSLayoutConstraint.activate([
       BtnOK.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      BtnOK.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150),
+      BtnOK.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -250),
       
       BtnOK.heightAnchor.constraint(equalToConstant: 50),
       BtnOK.widthAnchor.constraint(equalToConstant: 300)
     ])
-    //========================================================================
+    
     func buttonAction(sender: UIButton!) {
       
       let btnsendtag: UIButton = sender
@@ -73,24 +67,20 @@ class StudentPage: UIViewController {
   }
   //==========================================================================
   func createDatePicker(){
-    addstudentTxt.textAlignment = .center
-      datePicker.datePickerMode = .date
   }
   //==========================================================================
   @objc func donePressed() {
     
-    guard let add = addstudentTxt.text  else {return}
+    let name =  addstudentTxt.text ?? ""
+    let uuid = UUID().uuidString
     
-    Firestore
-      .firestore()
-      .collection("students")
-      .addDocument(data:[
-        
-        "name" : add,
-        "attendance" : true
-    ])
-    addstudentTxt.text = ""
-    dismiss(animated: true)
+    StudentsService.shared.addStudent(
+      student: Students(name: name, id: uuid)
+    )
+    dismiss(animated: true, completion: nil)
   }
-} // class end
-//==========================================================================
+  //==========================================================================
+} //class end
+
+
+
