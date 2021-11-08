@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>525033394456-55v3nhoef4uuhsh6rqp54rfo5jenfib3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.525033394456-55v3nhoef4uuhsh6rqp54rfo5jenfib3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDfrk1Y3aYmo3kTlhQlVgzoXmf5EicrVR4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>525033394456</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Sally.com.AttenceApp</string>
+	<key>PROJECT_ID</key>
+	<string>sally-25acf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sally-25acf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:525033394456:ios:66385fe1f78f50493f0e6d</string>
+</dict>
+</plist>
