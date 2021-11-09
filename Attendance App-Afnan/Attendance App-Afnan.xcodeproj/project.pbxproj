@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68059616273807BC0051724D /* DaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059615273807BB0051724D /* DaysVC.swift */; };
+		68059619273807EA0051724D /* NewDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059618273807EA0051724D /* NewDayVC.swift */; };
+		6805961B273808000051724D /* DayAttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805961A273808000051724D /* DayAttendanceVC.swift */; };
+		6805961D273808230051724D /* StudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805961C273808230051724D /* StudentVC.swift */; };
+		6805961F273808380051724D /* NewStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805961E273808380051724D /* NewStudentVC.swift */; };
+		68059623273831DE0051724D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059622273831DE0051724D /* Day.swift */; };
+		68059625273831FC0051724D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059624273831FC0051724D /* Student.swift */; };
+		6805962A273988D70051724D /* StudentsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059629273988D60051724D /* StudentsDatabase.swift */; };
+		6805962C273988EA0051724D /* DaysDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805962B273988EA0051724D /* DaysDatabase.swift */; };
+		68A357742732761C001D6460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357732732761C001D6460 /* AppDelegate.swift */; };
+		68A357762732761C001D6460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357752732761C001D6460 /* SceneDelegate.swift */; };
+		68A3577D2732761D001D6460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A3577C2732761D001D6460 /* Assets.xcassets */; };
+		68A357802732761D001D6460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A3577E2732761D001D6460 /* LaunchScreen.storyboard */; };
+		68A3578827327643001D6460 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68A3578727327643001D6460 /* GoogleService-Info.plist */; };
+		68A3578E2732AA60001D6460 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3578D2732AA5F001D6460 /* TabBarController.swift */; };
+		A8C7EB245F09841500843B7C /* Pods_Attendance_App_Afnan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4FF1A2EB13ABFD2DB72FD7 /* Pods_Attendance_App_Afnan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A4FECDBDB1C00D6CCC5FFEE /* Pods-Attendance App-Afnan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance App-Afnan.release.xcconfig"; path = "Target Support Files/Pods-Attendance App-Afnan/Pods-Attendance App-Afnan.release.xcconfig"; sourceTree = "<group>"; };
+		68059615273807BB0051724D /* DaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysVC.swift; sourceTree = "<group>"; };
+		68059618273807EA0051724D /* NewDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayVC.swift; sourceTree = "<group>"; };
+		6805961A273808000051724D /* DayAttendanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAttendanceVC.swift; sourceTree = "<group>"; };
+		6805961C273808230051724D /* StudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentVC.swift; sourceTree = "<group>"; };
+		6805961E273808380051724D /* NewStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentVC.swift; sourceTree = "<group>"; };
+		68059622273831DE0051724D /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		68059624273831FC0051724D /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		68059629273988D60051724D /* StudentsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsDatabase.swift; sourceTree = "<group>"; };
+		6805962B273988EA0051724D /* DaysDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysDatabase.swift; sourceTree = "<group>"; };
+		68A357702732761C001D6460 /* Attendance App-Afnan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attendance App-Afnan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A357732732761C001D6460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68A357752732761C001D6460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68A3577C2732761D001D6460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68A3577F2732761D001D6460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68A357812732761D001D6460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A3578727327643001D6460 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68A3578D2732AA5F001D6460 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CC4FF1A2EB13ABFD2DB72FD7 /* Pods_Attendance_App_Afnan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance_App_Afnan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6866471D21D7B62A5AEE1FC /* Pods-Attendance App-Afnan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance App-Afnan.debug.xcconfig"; path = "Target Support Files/Pods-Attendance App-Afnan/Pods-Attendance App-Afnan.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68A3576D2732761C001D6460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C7EB245F09841500843B7C /* Pods_Attendance_App_Afnan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30F14E87648C73913412F7B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC4FF1A2EB13ABFD2DB72FD7 /* Pods_Attendance_App_Afnan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68059617273807C40051724D /* Dayes */ = {
+			isa = PBXGroup;
+			children = (
+				68059615273807BB0051724D /* DaysVC.swift */,
+				68059618273807EA0051724D /* NewDayVC.swift */,
+				6805961A273808000051724D /* DayAttendanceVC.swift */,
+			);
+			path = Dayes;
+			sourceTree = "<group>";
+		};
+		680596202738083E0051724D /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				6805961C273808230051724D /* StudentVC.swift */,
+				6805961E273808380051724D /* NewStudentVC.swift */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+		68059621273831BA0051724D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68059622273831DE0051724D /* Day.swift */,
+				68059624273831FC0051724D /* Student.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68059628273988B40051724D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				68059629273988D60051724D /* StudentsDatabase.swift */,
+				6805962B273988EA0051724D /* DaysDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		68A357672732761C001D6460 = {
+			isa = PBXGroup;
+			children = (
+				68A357722732761C001D6460 /* Attendance App-Afnan */,
+				68A357712732761C001D6460 /* Products */,
+				9D807937607177DCBDABDB93 /* Pods */,
+				30F14E87648C73913412F7B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68A357712732761C001D6460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68A357702732761C001D6460 /* Attendance App-Afnan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68A357722732761C001D6460 /* Attendance App-Afnan */ = {
+			isa = PBXGroup;
+			children = (
+				68A3578727327643001D6460 /* GoogleService-Info.plist */,
+				68A357732732761C001D6460 /* AppDelegate.swift */,
+				68A357752732761C001D6460 /* SceneDelegate.swift */,
+				68A3578D2732AA5F001D6460 /* TabBarController.swift */,
+				68059628273988B40051724D /* Database */,
+				68059621273831BA0051724D /* Models */,
+				680596202738083E0051724D /* Students */,
+				68059617273807C40051724D /* Dayes */,
+				68A3577C2732761D001D6460 /* Assets.xcassets */,
+				68A3577E2732761D001D6460 /* LaunchScreen.storyboard */,
+				68A357812732761D001D6460 /* Info.plist */,
+			);
+			path = "Attendance App-Afnan";
+			sourceTree = "<group>";
+		};
+		9D807937607177DCBDABDB93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6866471D21D7B62A5AEE1FC /* Pods-Attendance App-Afnan.debug.xcconfig */,
+				0A4FECDBDB1C00D6CCC5FFEE /* Pods-Attendance App-Afnan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68A3576F2732761C001D6460 /* Attendance App-Afnan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A357842732761D001D6460 /* Build configuration list for PBXNativeTarget "Attendance App-Afnan" */;
+			buildPhases = (
+				6FAC8B911CA5E2FE2CBBDEE1 /* [CP] Check Pods Manifest.lock */,
+				68A3576C2732761C001D6460 /* Sources */,
+				68A3576D2732761C001D6460 /* Frameworks */,
+				68A3576E2732761C001D6460 /* Resources */,
+				2634A5A8FD868E90B7E33D2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Attendance App-Afnan";
+			productName = "Attendance App-Afnan";
+			productReference = 68A357702732761C001D6460 /* Attendance App-Afnan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68A357682732761C001D6460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					68A3576F2732761C001D6460 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 68A3576B2732761C001D6460 /* Build configuration list for PBXProject "Attendance App-Afnan" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68A357672732761C001D6460;
+			productRefGroup = 68A357712732761C001D6460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68A3576F2732761C001D6460 /* Attendance App-Afnan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68A3576E2732761C001D6460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A357802732761D001D6460 /* LaunchScreen.storyboard in Resources */,
+				68A3577D2732761D001D6460 /* Assets.xcassets in Resources */,
+				68A3578827327643001D6460 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2634A5A8FD868E90B7E33D2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attendance App-Afnan/Pods-Attendance App-Afnan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attendance App-Afnan/Pods-Attendance App-Afnan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attendance App-Afnan/Pods-Attendance App-Afnan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FAC8B911CA5E2FE2CBBDEE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attendance App-Afnan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68A3576C2732761C001D6460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68059619273807EA0051724D /* NewDayVC.swift in Sources */,
+				68A357742732761C001D6460 /* AppDelegate.swift in Sources */,
+				68A357762732761C001D6460 /* SceneDelegate.swift in Sources */,
+				6805961B273808000051724D /* DayAttendanceVC.swift in Sources */,
+				6805961D273808230051724D /* StudentVC.swift in Sources */,
+				68059623273831DE0051724D /* Day.swift in Sources */,
+				68A3578E2732AA60001D6460 /* TabBarController.swift in Sources */,
+				68059616273807BC0051724D /* DaysVC.swift in Sources */,
+				6805961F273808380051724D /* NewStudentVC.swift in Sources */,
+				6805962A273988D70051724D /* StudentsDatabase.swift in Sources */,
+				6805962C273988EA0051724D /* DaysDatabase.swift in Sources */,
+				68059625273831FC0051724D /* Student.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68A3577E2732761D001D6460 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68A3577F2732761D001D6460 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68A357822732761D001D6460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68A357832732761D001D6460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68A357852732761D001D6460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6866471D21D7B62A5AEE1FC /* Pods-Attendance App-Afnan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U2GBY9XAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Attendance App-Afnan/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Afnan-khalid.Attendance-App-Afnan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68A357862732761D001D6460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4FECDBDB1C00D6CCC5FFEE /* Pods-Attendance App-Afnan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8U2GBY9XAF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Attendance App-Afnan/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Afnan-khalid.Attendance-App-Afnan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68A3576B2732761C001D6460 /* Build configuration list for PBXProject "Attendance App-Afnan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A357822732761D001D6460 /* Debug */,
+				68A357832732761D001D6460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A357842732761D001D6460 /* Build configuration list for PBXNativeTarget "Attendance App-Afnan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A357852732761D001D6460 /* Debug */,
+				68A357862732761D001D6460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68A357682732761C001D6460 /* Project object */;
+}
