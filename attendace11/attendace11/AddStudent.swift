@@ -15,13 +15,7 @@ class AddStudent: UIViewController , UITextFieldDelegate{
     let datePicker = UIDatePicker()
     let BtnOK = UIButton()
     
-    
-//    var callbackClosure: (() -> Void)?
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        
-//        callbackClosure?()
-//    }
+
     
     
     
@@ -53,12 +47,8 @@ class AddStudent: UIViewController , UITextFieldDelegate{
         view.addSubview(BtnOK)
         BtnOK.addTarget(self, action: #selector(donePressed), for: .touchUpInside)
         NSLayoutConstraint.activate([
-            //            BtnOK.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            //             BtnOK.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            //        BtnOK.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 50),
             BtnOK.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -170),
-//            BtnOK.widthAnchor.constraint(equalTo: view.widthAnchor, constant: 90),
-            //        BtnOK.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+
             BtnOK.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300)
         ])
         BtnOK.backgroundColor = UIColor.gray
@@ -75,36 +65,12 @@ class AddStudent: UIViewController , UITextFieldDelegate{
     }
     
     func createDatePicker(){
-//
-//        addstudentTxt.textAlignment = .center
-//
-//        let toolbar = UIToolbar()
-//        toolbar.sizeToFit()
-//
-//        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector (donePressed))
-//        toolbar.setItems ([doneBtn], animated: true)
-//
-//        addstudentTxt.inputAccessoryView = toolbar
-//
-//        datePicker.preferredDatePickerStyle = .wheels
-//        birthDateTxt.inputView = datePicker
-//        datePicker.datePickerMode = .date
         
     }
     
     @objc func donePressed() {
         
-//        let formatter = DateFormatter()
-//        formatter.dateStyle = .medium
-//        formatter.timeStyle = .none
-        
-        
-//        addstudentTxt.text = formatter.string(from: datePicker.date)
-//        self.view.endEditing(true)
-        
-//        Addn.append(
-//            Students(name: addstudentTxt.text!)
-//        )
+
         
         let name =  addstudentTxt.text ?? ""
         let uuid = UUID().uuidString
@@ -115,19 +81,6 @@ class AddStudent: UIViewController , UITextFieldDelegate{
         
         dismiss(animated: true, completion: nil)
         
-//        let uuid = UUID().uuidString
-//        guard let add = addstudentTxt.text  else {return}
-//        //guard let user = user else {return}
-//        Firestore.firestore().collection("Students").addDocument(data:[
-//
-//            "name" : add,
-//            "id"  : uuid
-//            //"attendance" : true
-//        ])
-//
-//        addstudentTxt.text = ""
-//
-//        dismiss(animated: true)
         
         
           }

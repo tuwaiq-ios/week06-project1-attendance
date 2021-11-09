@@ -46,6 +46,7 @@ class PrsentPage: UIViewController , UITableViewDataSource, UITableViewDelegate 
             self.updateViews()
         }
         
+        
         StudentsService.shared.listenToStudents { newStudents in
             self.students = newStudents
             self.updateViews()
@@ -103,11 +104,27 @@ class PrsentPage: UIViewController , UITableViewDataSource, UITableViewDelegate 
         )
     }
     
-
-    
+//        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//            let student = students[indexPath.row]
+//            if editingStyle == .delete {
+//                students.remove(at: indexPath.row)
+//                StudentsService.shared.deleteStudent(studentId: student.id)
+//                deleteonestudent()
+//                TV2.reloadData()
+//            }
+//        }
+//
     func checkStudentPresent(studentId: String) -> Bool {
         return day?.pStudents.contains(studentId) ?? false
     }
+    
+    
+//    func deleteonestudent() -> Int {
+//       var a = day?.pStudents.count ??
+//        return a-=1
+//    }
+    
+    
     
     func getPStudentsCount() -> Int {
         return day?.pStudents.count ?? 0

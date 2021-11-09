@@ -66,19 +66,12 @@ class StudentsVC: UIViewController , UITableViewDataSource, UITableViewDelegate 
         let contact = Addnews[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         as! Cell
-        cell.textLabel?.text = "\(contact.name)"
+        cell.textLabel?.text = "\(contact.name!)"
         
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        let student = Addnews[indexPath.row]
-//        if editingStyle == .delete {
-//            Addnews.remove(at: indexPath.row)
-//            StudentsService.shared.deleteStudent(studentId: student.id)
-//            TV1.reloadData()
-//        }
-//    }
+
 
     
     @objc func buttonAction(sender: UIButton!) {
