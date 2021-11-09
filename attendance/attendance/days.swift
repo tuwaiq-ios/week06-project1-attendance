@@ -77,17 +77,11 @@ class DateList : UIViewController , UITableViewDelegate ,UITableViewDataSource {
 		view.addSubview(BtnAdd)
 		
 		NSLayoutConstraint.activate([
-			BtnAdd.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -50),
-
-			BtnAdd.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
-		])
-//
-//		NSLayoutConstraint.activate([
-//			BtnAdd.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
-//			BtnAdd.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
-//			BtnAdd.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-//			BtnAdd.heightAnchor.constraint(equalToConstant: 210)
-//		])
+		   BtnAdd.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+		   BtnAdd.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150),
+		   BtnAdd.heightAnchor.constraint(equalToConstant: 50),
+		   BtnAdd.widthAnchor.constraint(equalToConstant: 300)
+		  ])
 	 
 		BtnAdd.backgroundColor = UIColor.gray
 		BtnAdd.setTitle("+ Day", for: .normal)

@@ -46,7 +46,7 @@ class StudentsVC: UIViewController , UITableViewDataSource, UITableViewDelegate 
 		BtnAdd.translatesAutoresizingMaskIntoConstraints = false
 		NSLayoutConstraint.activate([
 			BtnAdd.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -50),
-			
+
 			BtnAdd.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
 		])
 		//BtnAdd.backgroundColor = .orange
