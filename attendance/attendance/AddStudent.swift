@@ -10,19 +10,13 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class AddStudent: UIViewController {
+class AddStudent: UIViewController , UITextFieldDelegate{
 	
 	var addstudentTxt = UITextField()
 	let datePicker = UIDatePicker()
 	let BtnOK = UIButton()
 	
-	
-	var callbackClosure: (() -> Void)?
-	override func viewWillDisappear(_ animated: Bool) {
-		super.viewWillDisappear(animated)
-		
-		callbackClosure?()
-	}
+
 	
 	
 	
@@ -34,8 +28,8 @@ class AddStudent: UIViewController {
 		
 		
 		
-		view.backgroundColor = .lightGray
-		addstudentTxt.placeholder = "Add Student"
+		view.backgroundColor = .darkGray
+		addstudentTxt.placeholder = "+ Student"
 		addstudentTxt.textAlignment = .center
 		addstudentTxt.translatesAutoresizingMaskIntoConstraints = false
 		addstudentTxt.textColor = .black
@@ -54,11 +48,12 @@ class AddStudent: UIViewController {
 		view.addSubview(BtnOK)
 		BtnOK.addTarget(self, action: #selector(donePressed), for: .touchUpInside)
 		NSLayoutConstraint.activate([
-			BtnOK.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -100),
+			BtnOK.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -170),
+
 			BtnOK.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300)
 		])
-		BtnOK.backgroundColor = UIColor.lightGray
-		BtnOK.setTitle(" Write Students's Name", for: .normal)
+		BtnOK.backgroundColor = UIColor.gray
+		BtnOK.setTitle("DONE", for: .normal)
 		
 		func buttonAction(sender: UIButton!) {
 			let btnsendtag: UIButton = sender
@@ -72,38 +67,26 @@ class AddStudent: UIViewController {
 	
 	func createDatePicker(){
 		
-		addstudentTxt.textAlignment = .center
-		
-		//		let toolbar = UIToolbar()
-		//		toolbar.sizeToFit()
-		//
-		//		let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector (donePressed))
-		//		toolbar.setItems ([doneBtn], animated: true)
-		//
-		//		addstudentTxt.inputAccessoryView = toolbar
-		//		datePicker.preferredDatePickerStyle = .wheels
-		//		birthDateTxt.inputView = datePicker
-		//		datePicker.datePickerMode = .date
 	}
 	
 	@objc func donePressed() {
 		
+
+		
+		let name =  addstudentTxt.text ?? ""
+		let uuid = UUID().uuidString
+
+		StudentsService.shared.addStudent(
+			student: Students(name: name, id: uuid)
+		)
+		
+		dismiss(animated: true, completion: nil)
 		
 		
-		guard let add = addstudentTxt.text  else {return}
-		Firestore.firestore().collection("students")
-			.addDocument(data:[
-				"name" : add,
-				"attendance" : true
-			])
 		
-		addstudentTxt.text = ""
-		
-		dismiss(animated: true)
-		
-		
-	}
+		  }
 	
 }
+
 
 

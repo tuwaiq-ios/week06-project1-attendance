@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
-class MViewController: UIViewController {
+class DatePicer: UIViewController {
 	
 	var birthDateTxt = UITextField()
 	let datePicker = UIDatePicker()
@@ -31,11 +33,11 @@ class MViewController: UIViewController {
 		
 		
 		
-		view.backgroundColor = .lightGray
-		birthDateTxt.placeholder = "Write Day Date"
+		view.backgroundColor = .darkGray
+		birthDateTxt.placeholder = "Write Students Name"
 		birthDateTxt.textAlignment = .center
 		birthDateTxt.translatesAutoresizingMaskIntoConstraints = false
-		birthDateTxt.textColor = .black
+		birthDateTxt.textColor = .darkGray
 		birthDateTxt.font = UIFont.systemFont(ofSize: 18)
 		birthDateTxt.backgroundColor = .systemGray5
 		
@@ -51,10 +53,12 @@ class MViewController: UIViewController {
 		view.addSubview(BtnOK)
 		
 		NSLayoutConstraint.activate([
+	 
 			BtnOK.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -180),
+	
 			BtnOK.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300)
 		])
-		BtnOK.backgroundColor = UIColor.lightGray
+		BtnOK.backgroundColor = UIColor.gray
 		BtnOK.setTitle("OK", for: .normal)
 		BtnOK.addTarget(self, action: #selector(butunp), for: .touchUpInside)
 		func buttonAction(sender: UIButton!) {
@@ -90,20 +94,28 @@ class MViewController: UIViewController {
 		formatter.dateStyle = .medium
 		formatter.timeStyle = .none
 		
-		
 		birthDateTxt.text = formatter.string(from: datePicker.date)
 		self.view.endEditing(true)
 		
-		dateP.append(
-			Day(date: datePicker.date)
-		)
-
+	
+		
 	}
 	
 	@objc func butunp(){
 		
+		let date = datePicker.date
+		let uuid = UUID().uuidString
 		
-		dismiss(animated: true)
+		DaysService.shared.addDay(
+			day: Day(
+				timestamp: Timestamp(date: date),
+				pStudents: [],
+				id: uuid
+			)
+		)
+		
+		dismiss(animated: true, completion: nil)
+		
 	}
 	
 }

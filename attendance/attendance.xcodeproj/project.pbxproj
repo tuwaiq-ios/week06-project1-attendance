@@ -13,15 +13,15 @@
 		5EEAC32127326BC500AB561C /* piecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC32027326BC500AB561C /* piecker.swift */; };
 		5EEAC32627326BC700AB561C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAC32527326BC700AB561C /* Assets.xcassets */; };
 		5EEAC32927326BC700AB561C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAC32727326BC700AB561C /* LaunchScreen.storyboard */; };
-		5EEAC35327327DA900AB561C /* Tab bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35227327DA900AB561C /* Tab bar.swift */; };
+		5EEAC35327327DA900AB561C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35227327DA900AB561C /* TabBarVC.swift */; };
 		5EEAC35527327E1100AB561C /* Students list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35427327E1100AB561C /* Students list.swift */; };
 		5EEAC3572732803000AB561C /* days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC3562732803000AB561C /* days.swift */; };
 		5EEAC3592732AE5B00AB561C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAC3582732AE5B00AB561C /* GoogleService-Info.plist */; };
-		5EEAC35B2732B7A800AB561C /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35A2732B7A800AB561C /* data.swift */; };
-		5EEAC35D2733B38800AB561C /* Hassan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35C2733B38800AB561C /* Hassan.swift */; };
-		5EEAC35F2733B3A300AB561C /* hassan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35E2733B3A300AB561C /* hassan.swift */; };
-		5EEAC3612733E91B00AB561C /* addstudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC3602733E91B00AB561C /* addstudent.swift */; };
+		5EEAC35B2732B7A800AB561C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35A2732B7A800AB561C /* Model.swift */; };
+		5EEAC35D2733B38800AB561C /* DayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC35C2733B38800AB561C /* DayService.swift */; };
+		5EEAC3612733E91B00AB561C /* AddStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC3602733E91B00AB561C /* AddStudent.swift */; };
 		5EEAC3632733F7FE00AB561C /* PrsentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC3622733F7FE00AB561C /* PrsentPage.swift */; };
+		5EF796F5273A84A700890375 /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF796F4273A84A700890375 /* StudentService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,15 +33,15 @@
 		5EEAC32527326BC700AB561C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EEAC32827326BC700AB561C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EEAC32A27326BC700AB561C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EEAC35227327DA900AB561C /* Tab bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab bar.swift"; sourceTree = "<group>"; };
+		5EEAC35227327DA900AB561C /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		5EEAC35427327E1100AB561C /* Students list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students list.swift"; sourceTree = "<group>"; };
 		5EEAC3562732803000AB561C /* days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = days.swift; sourceTree = "<group>"; };
 		5EEAC3582732AE5B00AB561C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5EEAC35A2732B7A800AB561C /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
-		5EEAC35C2733B38800AB561C /* Hassan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hassan.swift; sourceTree = "<group>"; };
-		5EEAC35E2733B3A300AB561C /* hassan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hassan.swift; sourceTree = "<group>"; };
-		5EEAC3602733E91B00AB561C /* addstudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addstudent.swift; sourceTree = "<group>"; };
+		5EEAC35A2732B7A800AB561C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5EEAC35C2733B38800AB561C /* DayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayService.swift; sourceTree = "<group>"; };
+		5EEAC3602733E91B00AB561C /* AddStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudent.swift; sourceTree = "<group>"; };
 		5EEAC3622733F7FE00AB561C /* PrsentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrsentPage.swift; sourceTree = "<group>"; };
+		5EF796F4273A84A700890375 /* StudentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
 		996E44B28AC9F6E5840EFFAE /* Pods_attendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_attendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44B9B21B4778787794DAF56 /* Pods-attendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-attendance.release.xcconfig"; path = "Target Support Files/Pods-attendance/Pods-attendance.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,21 +87,21 @@
 		5EEAC31B27326BC500AB561C /* attendance */ = {
 			isa = PBXGroup;
 			children = (
-				5EEAC31C27326BC500AB561C /* AppDelegate.swift */,
-				5EEAC31E27326BC500AB561C /* SceneDelegate.swift */,
 				5EEAC3582732AE5B00AB561C /* GoogleService-Info.plist */,
 				5EEAC32527326BC700AB561C /* Assets.xcassets */,
 				5EEAC32727326BC700AB561C /* LaunchScreen.storyboard */,
 				5EEAC32A27326BC700AB561C /* Info.plist */,
-				5EEAC35C2733B38800AB561C /* Hassan.swift */,
-				5EEAC32027326BC500AB561C /* piecker.swift */,
+				5EEAC31C27326BC500AB561C /* AppDelegate.swift */,
+				5EEAC31E27326BC500AB561C /* SceneDelegate.swift */,
+				5EEAC35227327DA900AB561C /* TabBarVC.swift */,
 				5EEAC3562732803000AB561C /* days.swift */,
 				5EEAC35427327E1100AB561C /* Students list.swift */,
+				5EEAC32027326BC500AB561C /* piecker.swift */,
 				5EEAC3622733F7FE00AB561C /* PrsentPage.swift */,
-				5EEAC3602733E91B00AB561C /* addstudent.swift */,
-				5EEAC35227327DA900AB561C /* Tab bar.swift */,
-				5EEAC35A2732B7A800AB561C /* data.swift */,
-				5EEAC35E2733B3A300AB561C /* hassan.swift */,
+				5EEAC3602733E91B00AB561C /* AddStudent.swift */,
+				5EF796F4273A84A700890375 /* StudentService.swift */,
+				5EEAC35C2733B38800AB561C /* DayService.swift */,
+				5EEAC35A2732B7A800AB561C /* Model.swift */,
 			);
 			path = attendance;
 			sourceTree = "<group>";
@@ -230,16 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEAC3612733E91B00AB561C /* addstudent.swift in Sources */,
+				5EEAC3612733E91B00AB561C /* AddStudent.swift in Sources */,
+				5EF796F5273A84A700890375 /* StudentService.swift in Sources */,
 				5EEAC32127326BC500AB561C /* piecker.swift in Sources */,
 				5EEAC35527327E1100AB561C /* Students list.swift in Sources */,
 				5EEAC31D27326BC500AB561C /* AppDelegate.swift in Sources */,
 				5EEAC3632733F7FE00AB561C /* PrsentPage.swift in Sources */,
-				5EEAC35327327DA900AB561C /* Tab bar.swift in Sources */,
-				5EEAC35F2733B3A300AB561C /* hassan.swift in Sources */,
+				5EEAC35327327DA900AB561C /* TabBarVC.swift in Sources */,
 				5EEAC3572732803000AB561C /* days.swift in Sources */,
-				5EEAC35D2733B38800AB561C /* Hassan.swift in Sources */,
-				5EEAC35B2732B7A800AB561C /* data.swift in Sources */,
+				5EEAC35D2733B38800AB561C /* DayService.swift in Sources */,
+				5EEAC35B2732B7A800AB561C /* Model.swift in Sources */,
 				5EEAC31F27326BC500AB561C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

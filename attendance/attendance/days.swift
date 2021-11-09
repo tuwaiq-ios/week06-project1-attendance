@@ -11,39 +11,54 @@ import UIKit
 class DateList : UIViewController , UITableViewDelegate ,UITableViewDataSource {
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return dateP.count
+		return todayday.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier:"cell",for: indexPath) as! CellDays
-		let listdays = dateP[indexPath.row]
 		
-		let formatter = DateFormatter()
-		formatter.dateStyle = .medium
-		formatter.timeStyle = .none
+		let cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
 		
+		let day =  todayday[indexPath.row]
+		let pStudentCount = day.pStudents.count
+		let aStudentCount = studentCount - pStudentCount
 		
-		cell.Label8.text = formatter.string(from: listdays.date)
+		cell.textLabel?.text = day.getNiceDate()
+		cell.detailTextLabel?.text = "P: \(pStudentCount), A: \(aStudentCount)"
 		
-		//cell.Label8.text = "\(listdays.date)"
 		return cell
-		
+
 	}
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		let dd = dateP[indexPath.row]
+		let day = todayday[indexPath.row]
+		
+		let navigationController = UINavigationController(
+			rootViewController: PrsentPage(dayId: day.id)
+		)
+		navigationController.navigationBar.prefersLargeTitles = true
+		
+		present(navigationController, animated: true, completion: nil)
 		
 		
-		
-		self.present(PrsentPage(), animated: true, completion: nil)
 	}
 	
-	
-	
+	var todayday : Array<Day> = []
+	var studentCount = 0
 	let TV = UITableView()
 	let BtnAdd = UIButton()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		DaysService.shared.listenToDays { newDays in
+			self.todayday = newDays
+			self.TV.reloadData()
+		}
+		StudentsService.shared.listenToStudentCount { newStudentCount in
+			self.studentCount = newStudentCount
+			self.TV.reloadData()
+		}
+		
+		
 		TV.delegate = self
 		TV.dataSource = self
 		
@@ -62,23 +77,29 @@ class DateList : UIViewController , UITableViewDelegate ,UITableViewDataSource {
 		view.addSubview(BtnAdd)
 		
 		NSLayoutConstraint.activate([
-			BtnAdd.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -150),
-			
+			BtnAdd.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -50),
+
 			BtnAdd.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
 		])
-		BtnAdd.backgroundColor = .orange
-		BtnAdd.backgroundColor = UIColor.darkGray
-		BtnAdd.setTitle(" + Day .", for: .normal)
+//
+//		NSLayoutConstraint.activate([
+//			BtnAdd.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+//			BtnAdd.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+//			BtnAdd.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+//			BtnAdd.heightAnchor.constraint(equalToConstant: 210)
+//		])
+	 
+		BtnAdd.backgroundColor = UIColor.gray
+		BtnAdd.setTitle("+ Day", for: .normal)
 		BtnAdd.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 		self.view.addSubview(BtnAdd)
 		
 		
-		//		addTarget(self, action: #selector(showSignupVC), for: .touchUpInside)
 	}
 	
 	@objc func buttonAction(sender: UIButton!) {
 		
-		let secondController = MViewController()
+		let secondController = DatePicer()
 		secondController.callbackClosure = { [weak self] in
 			
 			self?.TV.reloadData()
@@ -98,12 +119,7 @@ class CellDays: UITableViewCell {
 		super.init(style: style , reuseIdentifier: reuseIdentifier )
 		
 		
-		
-		Label8.translatesAutoresizingMaskIntoConstraints = false
-		self.addSubview(Label8)
-		NSLayoutConstraint.activate([
-			Label8.centerYAnchor.constraint(equalTo: centerYAnchor),
-			Label8.centerXAnchor.constraint(equalTo: centerXAnchor)])
+	
 		
 	}
 	required init?(coder: NSCoder) {

@@ -8,11 +8,50 @@
 import Foundation
 import UIKit
 
+
 class PrsentPage: UIViewController , UITableViewDataSource, UITableViewDelegate {
+	
+	var dayId: String
+	var day: Day?
+	var students: Array<Students> = []
+	
+	init (dayId: String) {
+		self.dayId = dayId
+		super.init(nibName: nil, bundle: nil)
+	}
+	
+	required init?(coder: NSCoder) {
+		self.dayId = ""
+		super.init(coder: coder)
+	}
+	lazy var pStudentsLabel = UILabel()
+	lazy var aStudentsLabel = UILabel()
+	lazy var labelStack: UIStackView = {
+		let sv = UIStackView(arrangedSubviews: [
+			pStudentsLabel, aStudentsLabel
+		])
+		sv.translatesAutoresizingMaskIntoConstraints = false
+		
+		return sv
+	}()
+	
 	
 	let TV2 = UITableView()
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		DaysService.shared.listenToDay(dayId: dayId) { newDay in
+			self.day = newDay
+			self.title = newDay?.getNiceDate()
+			self.updateViews()
+		}
+		
+		
+		StudentsService.shared.listenToStudents { newStudents in
+			self.students = newStudents
+			self.updateViews()
+		}
+		
 		view.backgroundColor = .white
 		TV2.dataSource = self
 		TV2.delegate = self
@@ -29,36 +68,88 @@ class PrsentPage: UIViewController , UITableViewDataSource, UITableViewDelegate 
 		])
 		
 		
-		
+		view.addSubview(labelStack)
+		NSLayoutConstraint.activate([
+			labelStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+			labelStack.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
+			labelStack.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
+		])
 	}
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return Addn.count
+		return students.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let contact = Addn[indexPath.row]
 		let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 		as! Cell2
-		cell.namecell.text = "\(contact.name)"
+		
+		let student = students[indexPath.row]
+		cell.textLabel?.text = student.name
+		
+		let isStudentPresent = checkStudentPresent(studentId: student.id)
+		if isStudentPresent {
+			cell.accessoryType = .checkmark
+		} else {
+			cell.accessoryType = .none
+		}
 		
 		return cell
 	}
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let student = students[indexPath.row]
+		
+		DaysService.shared.switchStudentStatus(
+			day: day!,
+			studentId: student.id
+		)
+	}
+	
+//        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//            let student = students[indexPath.row]
+//            if editingStyle == .delete {
+//                students.remove(at: indexPath.row)
+//                StudentsService.shared.deleteStudent(studentId: student.id)
+//                deleteonestudent()
+//                TV2.reloadData()
+//            }
+//        }
+//
+	func checkStudentPresent(studentId: String) -> Bool {
+		return day?.pStudents.contains(studentId) ?? false
+	}
+	
+	
+//    func deleteonestudent() -> Int {
+//       var a = day?.pStudents.count ??
+//        return a-=1
+//    }
+	
+	
+	
+	func getPStudentsCount() -> Int {
+		return day?.pStudents.count ?? 0
+	}
+	
+	func getAStudentsCount() -> Int {
+		let pStudentsCount = getPStudentsCount()
+		return students.count - pStudentsCount
+	}
+	
+	func updateViews() {
+		TV2.reloadData()
+		pStudentsLabel.text = "P: \(getPStudentsCount())"
+		aStudentsLabel.text = "A: \(getAStudentsCount())"
+	}
+	
+
+	
 }
 
 class Cell2: UITableViewCell {
 	
-	let namecell = UILabel()
 	
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
 		super.init(style: style , reuseIdentifier: reuseIdentifier )
-		
-		
-		
-		namecell.translatesAutoresizingMaskIntoConstraints = false
-		self.addSubview(namecell)
-		NSLayoutConstraint.activate(
-			[namecell.centerYAnchor.constraint(equalTo: centerYAnchor),
-			 namecell.centerXAnchor.constraint(equalTo: centerXAnchor)])
 		
 	}
 	required init?(coder: NSCoder) {
