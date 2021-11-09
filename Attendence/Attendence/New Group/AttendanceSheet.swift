@@ -127,7 +127,7 @@ class AttendanceSheet: UIViewController, UICollectionViewDataSource, UICollectio
         if isStudentPresent {
             cell.attendancelabel.text = "p"
         } else {
-            cell.absencelabel.text = "A"
+            cell.attendancelabel.text = "A"
 
         }
     
