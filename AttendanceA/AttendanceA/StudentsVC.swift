@@ -32,7 +32,7 @@ class StudentsVC: UIViewController, UITextFieldDelegate {
 		b.setTitle("Add Student", for: .normal)
         b.layer.cornerRadius = 25
         
-		b.backgroundColor = .black
+		b.backgroundColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
 		return b
 	}()
     lazy var studentNameTF: UITextField = {
@@ -51,7 +51,7 @@ class StudentsVC: UIViewController, UITextFieldDelegate {
 			self.students = newStudents
 			self.studentsTV.reloadData()
 		}
-        saveText()
+//        saveText()
 		tabBarItem = UITabBarItem(title: "Students", image: UIImage(systemName: "person"), selectedImage: nil)
 		view.backgroundColor = .brown
 		
@@ -94,7 +94,7 @@ class StudentsVC: UIViewController, UITextFieldDelegate {
                 student: Student(name: textField.text!, id: uuid)
             )
            
-            self.students.append(Student(name: textField.text!, id: " " ))
+            self.students.append(Student(name: textField.text!, id: uuid ))
             
         }
     
@@ -147,19 +147,6 @@ class StudentsVC: UIViewController, UITextFieldDelegate {
             completion(students.count)
         }
     }
-
-    func saveText() {
-
-
-        let name = studentNameTF.text ?? ""
-        let uuid = UUID().uuidString
-
-        StudentsVC.shared.addStudent(
-            student: Student(name: name, id: uuid)
-        )
-
-       
-    }
     
 }
 
@@ -171,6 +158,7 @@ extension StudentsVC: UITableViewDataSource, UITableViewDelegate {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: SCell.identifire, for: indexPath) as! SCell
         
+        cell.backgroundColor =  .red
 
         cell.label2.text = students[indexPath.row].name
 
@@ -185,8 +173,8 @@ class SCell: UITableViewCell {
 
  public let label2: UILabel = {
       let label = UILabel()
-     label.font = UIFont.systemFont(ofSize: 20, weight: .light)
-      label.textColor = .black
+     label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+      label.textColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
       return label
     }()
     

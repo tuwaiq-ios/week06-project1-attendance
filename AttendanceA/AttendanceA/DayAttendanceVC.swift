@@ -29,6 +29,8 @@ class DayAttendanceVC: UIViewController {
 	}()
 	lazy var pStudentsLabel = UILabel()
 	lazy var aStudentsLabel = UILabel()
+  
+    
 	lazy var labelStack: UIStackView = {
 		let sv = UIStackView(arrangedSubviews: [
 			pStudentsLabel, aStudentsLabel
@@ -40,7 +42,14 @@ class DayAttendanceVC: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+        aStudentsLabel.backgroundColor =  UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+        pStudentsLabel.backgroundColor =  UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+        aStudentsLabel.font = UIFont.systemFont(ofSize: 22, weight: .regular)
+        pStudentsLabel.font = UIFont.systemFont(ofSize: 22, weight: .regular)
+        aStudentsLabel.textColor = .white
+        pStudentsLabel.textColor = .white
+        labelStack.layer.cornerRadius = 40
+        
         DaysVC.shared.listenToDay(dayId: dayId) { newDay in
 			self.day = newDay
 			self.title = newDay?.styleDate()
@@ -61,6 +70,8 @@ class DayAttendanceVC: UIViewController {
 			labelStack.topAnchor.constraint(equalTo: view.topAnchor, constant: 130),
 			labelStack.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
 			labelStack.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
+            labelStack.widthAnchor.constraint(equalToConstant: 60),
+            labelStack.heightAnchor.constraint(equalToConstant: 60),
 		])
 		
 		view.addSubview(studentsTV)
@@ -79,13 +90,14 @@ class DayAttendanceVC: UIViewController {
 	}
 	
 	func getPStudentsCount() -> Int {
-		return day?.pStudents.count ?? 0
+        return day?.pStudents.count ?? 0
 	}
 	
 	func getAStudentsCount() -> Int {
 		let pStudentsCount = getPStudentsCount()
-		return students.count - pStudentsCount
+		return (students.count - pStudentsCount)
 	}
+//    (pStudentsCount - students.count)
 	
 	func updateViews() {
 		studentsTV.reloadData()
@@ -101,24 +113,25 @@ extension DayAttendanceVC: UITableViewDataSource, UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Cell3.identifire, for: indexPath) as! Cell3
-		
+        cell.backgroundColor =  UIColor(red: (237/255), green: (242/255), blue: (245/255), alpha: 1)
 		let student = students[indexPath.row]
 		cell.label5.text = student.name
-		
+    
 		
 		let isStudentPresent = checkStudentPresent(studentId: student.id)
 		if isStudentPresent {
             
             
-			cell.accessoryType = .checkmark
+
             
-//                cell.label6.text = "Present"
+                cell.label6.text = "Present"
+            cell.label6.textColor = .systemGreen
         } else {
             
+
             
-			cell.accessoryType = .none
-            
-//                cell.label6.text = "Present"
+                cell.label6.text = "Apsent"
+            cell.label6.textColor = .red
 		}
 	
 		
@@ -133,10 +146,7 @@ extension DayAttendanceVC: UITableViewDataSource, UITableViewDelegate {
 			studentId: student.id
 		)
         
-        
-
      
-        
         tableView.reloadData()
 	}
 	
@@ -146,12 +156,15 @@ extension DayAttendanceVC: UITableViewDataSource, UITableViewDelegate {
 
 class Cell3: UITableViewCell {
     
+  
+    
+    
     static let identifire = "cell"
     
     public let label5: UILabel = {
         let label = UILabel()
         
-        label.font = UIFont.systemFont(ofSize: 20, weight: .light)
+        label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
         label.textColor = .black
         return label
     }()

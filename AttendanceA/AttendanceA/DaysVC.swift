@@ -45,7 +45,7 @@ class DaysVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 		b.addTarget(self, action: #selector(AddDay), for: .touchUpInside)
 		b.translatesAutoresizingMaskIntoConstraints = false
 		b.setTitle("Add Day", for: .normal)
-		b.backgroundColor = .black
+		b.backgroundColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
         b.layer.cornerRadius = 25
 		return b
 	}()
@@ -91,17 +91,19 @@ class DaysVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
             let cell = tableView.dequeueReusableCell(withIdentifier: Cell.identifire, for: indexPath) as! Cell
-            
+//
             let day = days[indexPath.row]
             let pStudentCount = day.pStudents.count
-            let aStudentCount = studentCount - pStudentCount
-            
+            let aStudentCount = (studentCount -  pStudentCount)
+//        cell.backgroundColor = .red
             cell.label2.text = day.styleDate()
             cell.label3.text = "P: \(pStudentCount)"
             cell.label4.text = " A: \(aStudentCount)"
-            
+      
             return cell
     }
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let day = days[indexPath.row]
         
@@ -241,11 +243,16 @@ class DaysVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 class Cell: UITableViewCell {
     
     static let identifire = "cell"
+     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+      cell.backgroundColor = .yellow
+
+     }
+   
 
  public let label2: UILabel = {
       let label = UILabel()
-     label.font = UIFont.systemFont(ofSize: 20, weight: .light)
-      label.textColor = .black
+     label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+      label.textColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
       return label
     }()
     
@@ -253,8 +260,8 @@ class Cell: UITableViewCell {
     public let label3: UILabel = {
          let label = UILabel()
          label.text = "a"
-         label.font = UIFont.systemFont(ofSize: 20, weight: .light)
-         label.textColor = .black
+         label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+         label.textColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
  //
          return label
        }()
@@ -262,8 +269,8 @@ class Cell: UITableViewCell {
     public let label4: UILabel = {
          let label = UILabel()
          label.text = "b"
-        label.font = UIFont.systemFont(ofSize: 20, weight: .light)
-         label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
+         label.textColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
 
          return label
        }()
