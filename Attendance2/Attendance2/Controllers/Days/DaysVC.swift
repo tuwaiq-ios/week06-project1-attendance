@@ -27,7 +27,7 @@ class DaysVC: UIViewController {
         b.addTarget(self, action: #selector(addDay), for: .touchUpInside)
         b.translatesAutoresizingMaskIntoConstraints = false
         b.setTitle("Add", for: .normal)
-        b.backgroundColor = .orange
+        b.backgroundColor = .lightGray
         return b
     }()
     
@@ -44,7 +44,7 @@ class DaysVC: UIViewController {
         }
         
         tabBarItem = UITabBarItem(title: "Days", image: UIImage(systemName: "calendar"), selectedImage: nil)
-        view.backgroundColor = .gray
+        view.backgroundColor = .lightGray
         
         view.addSubview(daysTV)
         NSLayoutConstraint.activate([
@@ -83,7 +83,7 @@ extension DaysVC: UITableViewDelegate, UITableViewDataSource {
         let aStudentCount = studentCount - pStudentCount
         
         cell.textLabel?.text = day.getNiceDate()
-        cell.detailTextLabel?.text = "P: \(pStudentCount), A: \(aStudentCount)"
+        cell.detailTextLabel?.text = "P✅: \(pStudentCount), A✖️: \(aStudentCount)"
         
         return cell
     }

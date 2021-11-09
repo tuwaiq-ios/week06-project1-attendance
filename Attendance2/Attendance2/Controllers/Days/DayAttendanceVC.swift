@@ -58,7 +58,7 @@ class DayAttendanceVC: UIViewController {
             self.updateViews()
         }
         
-        view.backgroundColor = .orange
+        view.backgroundColor = .white
         
         view.addSubview(labelStack)
         NSLayoutConstraint.activate([

@@ -13,7 +13,7 @@ class NewStudentVC: UIViewController, UITextFieldDelegate {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = "Write student name"
-        tf.backgroundColor = .white
+        tf.backgroundColor = .purple
         tf.delegate = self
         return tf
     }()
@@ -21,7 +21,7 @@ class NewStudentVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .yellow
+        view.backgroundColor = .darkGray
         
         view.addSubview(studentNameTF)
         NSLayoutConstraint.activate([

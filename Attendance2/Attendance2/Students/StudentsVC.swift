@@ -24,7 +24,7 @@ class StudentsVC: UIViewController {
         b.addTarget(self, action: #selector(addStudent), for: .touchUpInside)
         b.translatesAutoresizingMaskIntoConstraints = false
         b.setTitle("Add", for: .normal)
-        b.backgroundColor = .red
+        b.backgroundColor = .darkGray
         return b
     }()
     
@@ -37,8 +37,7 @@ class StudentsVC: UIViewController {
         }
         
         tabBarItem = UITabBarItem(title: "Students", image: UIImage(systemName: "person"), selectedImage: nil)
-        view.backgroundColor = .brown
-        
+        self.view.backgroundColor = .brown
         view.addSubview(studentsTV)
         NSLayoutConstraint.activate([
             studentsTV.topAnchor.constraint(equalTo: view.topAnchor),
@@ -66,7 +65,8 @@ extension StudentsVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return students.count
     }
-    
+ 
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentCell", for: indexPath)
         

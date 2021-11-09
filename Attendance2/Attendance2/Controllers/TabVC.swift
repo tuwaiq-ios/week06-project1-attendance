@@ -13,8 +13,8 @@ class TabVC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .brown
         
-        view.backgroundColor = .red
         viewControllers = [
             StudentsVC(),
             DaysVC()

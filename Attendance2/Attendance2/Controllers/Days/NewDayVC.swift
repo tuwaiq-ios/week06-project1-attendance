@@ -23,7 +23,7 @@ class NewDayVC: UIViewController {
     lazy var addDayBtn: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.backgroundColor = .systemBlue
+        btn.backgroundColor = .blue
         btn.setTitleColor(.white, for: .normal)
         btn.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
         btn.setTitle("Add day", for: .normal)
@@ -35,7 +35,7 @@ class NewDayVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = .darkGray
         
         view.addSubview(datePicker)
         NSLayoutConstraint.activate([
