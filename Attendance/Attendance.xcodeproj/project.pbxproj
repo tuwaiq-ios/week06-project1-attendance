@@ -8,24 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		0197BB7A2842CC98721CAA05 /* Pods_Attendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D66646D2866304834AFA2A4 /* Pods_Attendance.framework */; };
+		9607B9B6273A1E2600B0FD55 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607B9B5273A1E2600B0FD55 /* Day.swift */; };
+		9607B9B8273A1E6B00B0FD55 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607B9B7273A1E6B00B0FD55 /* Student.swift */; };
+		9607B9BA273A1FC000B0FD55 /* NewStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607B9B9273A1FC000B0FD55 /* NewStudentVC.swift */; };
+		9607B9BC273A200A00B0FD55 /* NewDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607B9BB273A200A00B0FD55 /* NewDayVC.swift */; };
+		9607B9BE273A203D00B0FD55 /* DayAttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607B9BD273A203D00B0FD55 /* DayAttendanceVC.swift */; };
+		9607B9C0273A208200B0FD55 /* StudentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607B9BF273A208200B0FD55 /* StudentsService.swift */; };
+		9607B9C2273A20C600B0FD55 /* DaysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607B9C1273A20C600B0FD55 /* DaysService.swift */; };
 		96A8DA782737B598004B990D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA772737B598004B990D /* AppDelegate.swift */; };
 		96A8DA7A2737B598004B990D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA792737B598004B990D /* SceneDelegate.swift */; };
 		96A8DA812737B598004B990D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A8DA802737B598004B990D /* Assets.xcassets */; };
 		96A8DA842737B598004B990D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8DA822737B598004B990D /* LaunchScreen.storyboard */; };
 		96A8DA8C2737B6DF004B990D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96A8DA8B2737B6DF004B990D /* GoogleService-Info.plist */; };
-		96A8DA8E2737B782004B990D /* addstudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA8D2737B782004B990D /* addstudent.swift */; };
 		96A8DA902737B794004B990D /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA8F2737B794004B990D /* TabVC.swift */; };
-		96A8DA922737B799004B990D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA912737B799004B990D /* Data.swift */; };
-		96A8DA942737B79F004B990D /* StudentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA932737B79F004B990D /* StudentsList.swift */; };
-		96A8DA962737B7A2004B990D /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA952737B7A2004B990D /* DatePicker.swift */; };
-		96A8DA982737B7A6004B990D /* presntPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA972737B7A6004B990D /* presntPage.swift */; };
-		96A8DA9A2737B7AA004B990D /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA992737B7AA004B990D /* Days.swift */; };
-		96A8DA9C2737B7CC004B990D /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA9B2737B7CC004B990D /* CheckButton.swift */; };
+		96A8DA942737B79F004B990D /* StudentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA932737B79F004B990D /* StudentsVC.swift */; };
+		96A8DA9A2737B7AA004B990D /* DaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8DA992737B7AA004B990D /* DaysVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03451FED3B0D5DEEC12D09B6 /* Pods-Attendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance.debug.xcconfig"; path = "Target Support Files/Pods-Attendance/Pods-Attendance.debug.xcconfig"; sourceTree = "<group>"; };
 		0D66646D2866304834AFA2A4 /* Pods_Attendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9607B9B5273A1E2600B0FD55 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		9607B9B7273A1E6B00B0FD55 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		9607B9B9273A1FC000B0FD55 /* NewStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentVC.swift; sourceTree = "<group>"; };
+		9607B9BB273A200A00B0FD55 /* NewDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayVC.swift; sourceTree = "<group>"; };
+		9607B9BD273A203D00B0FD55 /* DayAttendanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAttendanceVC.swift; sourceTree = "<group>"; };
+		9607B9BF273A208200B0FD55 /* StudentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsService.swift; sourceTree = "<group>"; };
+		9607B9C1273A20C600B0FD55 /* DaysService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysService.swift; sourceTree = "<group>"; };
 		96A8DA742737B598004B990D /* Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A8DA772737B598004B990D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A8DA792737B598004B990D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,14 +42,9 @@
 		96A8DA832737B598004B990D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A8DA852737B598004B990D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A8DA8B2737B6DF004B990D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		96A8DA8D2737B782004B990D /* addstudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addstudent.swift; sourceTree = "<group>"; };
 		96A8DA8F2737B794004B990D /* TabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
-		96A8DA912737B799004B990D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		96A8DA932737B79F004B990D /* StudentsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsList.swift; sourceTree = "<group>"; };
-		96A8DA952737B7A2004B990D /* DatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
-		96A8DA972737B7A6004B990D /* presntPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = presntPage.swift; sourceTree = "<group>"; };
-		96A8DA992737B7AA004B990D /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
-		96A8DA9B2737B7CC004B990D /* CheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		96A8DA932737B79F004B990D /* StudentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsVC.swift; sourceTree = "<group>"; };
+		96A8DA992737B7AA004B990D /* DaysVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysVC.swift; sourceTree = "<group>"; };
 		DE2FB19976C5B4640A36E6F4 /* Pods-Attendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance.release.xcconfig"; path = "Target Support Files/Pods-Attendance/Pods-Attendance.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,14 +92,16 @@
 				96A8DA8B2737B6DF004B990D /* GoogleService-Info.plist */,
 				96A8DA772737B598004B990D /* AppDelegate.swift */,
 				96A8DA792737B598004B990D /* SceneDelegate.swift */,
-				96A8DA8D2737B782004B990D /* addstudent.swift */,
+				9607B9BF273A208200B0FD55 /* StudentsService.swift */,
+				9607B9C1273A20C600B0FD55 /* DaysService.swift */,
+				9607B9B5273A1E2600B0FD55 /* Day.swift */,
+				9607B9B7273A1E6B00B0FD55 /* Student.swift */,
 				96A8DA8F2737B794004B990D /* TabVC.swift */,
-				96A8DA912737B799004B990D /* Data.swift */,
-				96A8DA992737B7AA004B990D /* Days.swift */,
-				96A8DA932737B79F004B990D /* StudentsList.swift */,
-				96A8DA9B2737B7CC004B990D /* CheckButton.swift */,
-				96A8DA972737B7A6004B990D /* presntPage.swift */,
-				96A8DA952737B7A2004B990D /* DatePicker.swift */,
+				96A8DA932737B79F004B990D /* StudentsVC.swift */,
+				9607B9B9273A1FC000B0FD55 /* NewStudentVC.swift */,
+				96A8DA992737B7AA004B990D /* DaysVC.swift */,
+				9607B9BB273A200A00B0FD55 /* NewDayVC.swift */,
+				9607B9BD273A203D00B0FD55 /* DayAttendanceVC.swift */,
 				96A8DA802737B598004B990D /* Assets.xcassets */,
 				96A8DA822737B598004B990D /* LaunchScreen.storyboard */,
 				96A8DA852737B598004B990D /* Info.plist */,
@@ -227,16 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A8DA982737B7A6004B990D /* presntPage.swift in Sources */,
-				96A8DA942737B79F004B990D /* StudentsList.swift in Sources */,
+				9607B9C2273A20C600B0FD55 /* DaysService.swift in Sources */,
+				96A8DA942737B79F004B990D /* StudentsVC.swift in Sources */,
 				96A8DA902737B794004B990D /* TabVC.swift in Sources */,
-				96A8DA922737B799004B990D /* Data.swift in Sources */,
+				9607B9BC273A200A00B0FD55 /* NewDayVC.swift in Sources */,
+				9607B9B6273A1E2600B0FD55 /* Day.swift in Sources */,
 				96A8DA782737B598004B990D /* AppDelegate.swift in Sources */,
-				96A8DA9A2737B7AA004B990D /* Days.swift in Sources */,
+				9607B9C0273A208200B0FD55 /* StudentsService.swift in Sources */,
+				96A8DA9A2737B7AA004B990D /* DaysVC.swift in Sources */,
+				9607B9B8273A1E6B00B0FD55 /* Student.swift in Sources */,
+				9607B9BA273A1FC000B0FD55 /* NewStudentVC.swift in Sources */,
 				96A8DA7A2737B598004B990D /* SceneDelegate.swift in Sources */,
-				96A8DA8E2737B782004B990D /* addstudent.swift in Sources */,
-				96A8DA9C2737B7CC004B990D /* CheckButton.swift in Sources */,
-				96A8DA962737B7A2004B990D /* DatePicker.swift in Sources */,
+				9607B9BE273A203D00B0FD55 /* DayAttendanceVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
