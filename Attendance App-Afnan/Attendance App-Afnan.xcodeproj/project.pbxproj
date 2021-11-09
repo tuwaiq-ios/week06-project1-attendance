@@ -14,8 +14,8 @@
 		6805961F273808380051724D /* NewStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805961E273808380051724D /* NewStudentVC.swift */; };
 		68059623273831DE0051724D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059622273831DE0051724D /* Day.swift */; };
 		68059625273831FC0051724D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059624273831FC0051724D /* Student.swift */; };
-		6805962A273988D70051724D /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059629273988D60051724D /* Students.swift */; };
-		6805962C273988EA0051724D /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805962B273988EA0051724D /* Days.swift */; };
+		6805962A273988D70051724D /* StudentsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68059629273988D60051724D /* StudentsDatabase.swift */; };
+		6805962C273988EA0051724D /* DaysDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805962B273988EA0051724D /* DaysDatabase.swift */; };
 		68A357742732761C001D6460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357732732761C001D6460 /* AppDelegate.swift */; };
 		68A357762732761C001D6460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A357752732761C001D6460 /* SceneDelegate.swift */; };
 		68A3577D2732761D001D6460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A3577C2732761D001D6460 /* Assets.xcassets */; };
@@ -34,8 +34,8 @@
 		6805961E273808380051724D /* NewStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentVC.swift; sourceTree = "<group>"; };
 		68059622273831DE0051724D /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		68059624273831FC0051724D /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		68059629273988D60051724D /* Students.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Students.swift; sourceTree = "<group>"; };
-		6805962B273988EA0051724D /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
+		68059629273988D60051724D /* StudentsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsDatabase.swift; sourceTree = "<group>"; };
+		6805962B273988EA0051724D /* DaysDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysDatabase.swift; sourceTree = "<group>"; };
 		68A357702732761C001D6460 /* Attendance App-Afnan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attendance App-Afnan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A357732732761C001D6460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68A357752732761C001D6460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 		68059628273988B40051724D /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				68059629273988D60051724D /* Students.swift */,
-				6805962B273988EA0051724D /* Days.swift */,
+				68059629273988D60051724D /* StudentsDatabase.swift */,
+				6805962B273988EA0051724D /* DaysDatabase.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -274,8 +274,8 @@
 				68A3578E2732AA60001D6460 /* TabBarController.swift in Sources */,
 				68059616273807BC0051724D /* DaysVC.swift in Sources */,
 				6805961F273808380051724D /* NewStudentVC.swift in Sources */,
-				6805962A273988D70051724D /* Students.swift in Sources */,
-				6805962C273988EA0051724D /* Days.swift in Sources */,
+				6805962A273988D70051724D /* StudentsDatabase.swift in Sources */,
+				6805962C273988EA0051724D /* DaysDatabase.swift in Sources */,
 				68059625273831FC0051724D /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

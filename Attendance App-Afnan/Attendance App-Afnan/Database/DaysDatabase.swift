@@ -9,6 +9,7 @@ import UIKit
 import FirebaseFirestore
 
 class DaysService {
+    
     static let shared = DaysService()
     
     let daysCollection = Firestore.firestore().collection("days")
@@ -70,13 +71,6 @@ class DaysService {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
     // Switch Student Status
     func switchStudentStatus(day: Day, studentId: String) {
         let isStudentPresent = day.presentStudent.contains(studentId)
@@ -85,14 +79,14 @@ class DaysService {
             let newPStudents = day.presentStudent.filter { id in id != studentId }
             
             daysCollection.document(day.id).updateData([
-                "pStudents": newPStudents
+                "presentStudents": newPStudents
             ])
         } else {
             var newPStudents = day.presentStudent
             newPStudents.append(studentId)
             
             daysCollection.document(day.id).updateData([
-                "pStudents": newPStudents
+                "presentStudents": newPStudents
             ])
         }
     }

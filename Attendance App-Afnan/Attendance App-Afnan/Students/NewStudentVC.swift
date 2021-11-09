@@ -10,24 +10,25 @@ import UIKit
 class NewStudentVC: UIViewController, UITextFieldDelegate{
     
     
-    var studentNameTF: UITextField {
+  lazy  var studentNameTF: UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = "Write Student Name"
-        tf.backgroundColor = .systemMint
+        tf.backgroundColor = .white
         tf.delegate = self
         return tf
-    }
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemMint
         
-        self.view.addSubview(studentNameTF)
+        view.addSubview(studentNameTF)
         NSLayoutConstraint.activate([
             studentNameTF.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             studentNameTF.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            studentNameTF.heightAnchor.constraint(equalToConstant: 40),
-            studentNameTF.widthAnchor.constraint(equalToConstant: -40)
+            studentNameTF.heightAnchor.constraint(equalToConstant: 50),
+            studentNameTF.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -50)
         ])
         
         

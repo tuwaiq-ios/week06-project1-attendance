@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 
 class StudentsService {
+    
     static let shared = StudentsService()
     
     let studentsCollection = Firestore.firestore().collection("students")
@@ -53,4 +54,6 @@ class StudentsService {
             completion(students.count)
         }
     }
+    
+    
 }

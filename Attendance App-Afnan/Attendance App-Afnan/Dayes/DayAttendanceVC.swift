@@ -20,7 +20,12 @@ class DayAttendanceVC: UIViewController {
         self.dayId = dayId
         super.init(nibName: nil, bundle: nil)
     }
-
+    
+    required init?(coder: NSCoder) {
+        self.dayId = ""
+        super.init(coder: coder)
+    }
+    
     
     lazy var studentsTV: UITableView = {
         let tv = UITableView()
@@ -31,24 +36,20 @@ class DayAttendanceVC: UIViewController {
         return tv
     }()
     
-    lazy var pStudentsLabel = UILabel()
+    lazy var presentStudentsLabel = UILabel()
     
-    lazy var aStudentsLabel = UILabel()
+    lazy var absentStudentsLabel = UILabel()
     
     lazy var labelStack: UIStackView = {
         let sv = UIStackView(arrangedSubviews: [
-            pStudentsLabel, aStudentsLabel
+            presentStudentsLabel, absentStudentsLabel
         ])
         sv.translatesAutoresizingMaskIntoConstraints = false
         
         return sv
     }()
     
-    required init?(coder: NSCoder) {
-        self.dayId = ""
-        super.init(coder: coder)
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,21 +64,23 @@ class DayAttendanceVC: UIViewController {
             self.updateViews()
         }
         
-        view.backgroundColor = .systemMint
+        view.backgroundColor = .yellow
         
-        self.view.addSubview(labelStack)
-        NSLayoutConstraint.activate([
-            labelStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16),
-            labelStack.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
-            labelStack.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
-        ])
+        view.addSubview(studentsTV)
+        view.addSubview(labelStack)
         
-        self.view.addSubview(studentsTV)
+        
         NSLayoutConstraint.activate([
             studentsTV.topAnchor.constraint(equalTo: view.topAnchor),
             studentsTV.leftAnchor.constraint(equalTo: view.leftAnchor),
             studentsTV.rightAnchor.constraint(equalTo: view.rightAnchor),
-            studentsTV.bottomAnchor.constraint(equalTo: labelStack.topAnchor),
+            studentsTV.bottomAnchor.constraint(equalTo: labelStack.topAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            labelStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16),
+            labelStack.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
+            labelStack.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16)
         ])
     }
     
@@ -85,19 +88,19 @@ class DayAttendanceVC: UIViewController {
         return day?.presentStudent.contains(studentId) ?? false
     }
     
-    func getPStudentsCount() -> Int {
+    func getPresentStudentsCount() -> Int {
         return day?.presentStudent.count ?? 0
     }
     
-    func getAStudentsCount() -> Int {
-        let pStudentsCount = getPStudentsCount()
-        return students.count - pStudentsCount
+    func getAbsentStudentsCount() -> Int {
+        let PresentStudentsCount = getPresentStudentsCount()
+        return students.count - PresentStudentsCount
     }
     
     func updateViews() {
         studentsTV.reloadData()
-        pStudentsLabel.text = "P: \(getPStudentsCount())"
-        aStudentsLabel.text = "A: \(getAStudentsCount())"
+        presentStudentsLabel.text = "P: \(getPresentStudentsCount())"
+        absentStudentsLabel.text = "A: \(getAbsentStudentsCount())"
     }
 }
 
@@ -116,9 +119,9 @@ extension DayAttendanceVC: UITableViewDelegate, UITableViewDataSource {
         
         let isStudentPresent = checkStudentPresent(studentId: student.id)
         if isStudentPresent {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
+            cell.backgroundColor = .systemGreen
+        }else {
+            cell.backgroundColor = .systemRed
         }
     
         
@@ -134,6 +137,36 @@ extension DayAttendanceVC: UITableViewDelegate, UITableViewDataSource {
         )
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+       
+        
+        let cell = students[indexPath.row]
+        
+        let alertcontroller = UIAlertController(title: "Alert"
+                                                , message: "Are you sure you want to delete all the tasks?"
+                                                , preferredStyle: UIAlertController.Style.alert
+        )
+        
+        alertcontroller.addAction(
+            UIAlertAction(title: "cancel", style: UIAlertAction.Style.default, handler: { Action in print("...")
+            })
+            
+        )
+        
+        alertcontroller.addAction(
+            UIAlertAction(title: "Delete", style: UIAlertAction.Style.destructive, handler: { Action in
+                if editingStyle == .delete {
+                    self.students.remove(at: indexPath.row)
+                    self.studentsTV.deleteRows(at: [indexPath], with: .fade)
+                }
+                self.studentsTV.reloadData()
+            })
+            
+        )
+        
+        
+        self.present(alertcontroller, animated: true, completion: nil)
+        
+    }
     
 }

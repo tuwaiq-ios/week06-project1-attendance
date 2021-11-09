@@ -11,18 +11,16 @@ import FirebaseFirestore
 
 class NewDayVC: UIViewController {
     
-    
-    
-    var datePicker: UIDatePicker {
+   lazy var datePicker: UIDatePicker = {
         let datePicker = UIDatePicker()
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         datePicker.addTarget(self, action: #selector(dateChanged), for: .touchUpInside)
         datePicker.datePickerMode = .date
         
         return datePicker
-    }
+    }()
     
-    var addDate: UIButton {
+   lazy var addDate: UIButton = {
         let dateB = UIButton()
         dateB.translatesAutoresizingMaskIntoConstraints = false
         dateB.backgroundColor = .systemMint
@@ -31,20 +29,20 @@ class NewDayVC: UIViewController {
         dateB.addTarget(self, action: #selector(addDay), for: .touchUpInside)
         
         return dateB
-    }
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view .backgroundColor = .cyan
         
-        self.view.addSubview(datePicker)
+        view.addSubview(datePicker)
         NSLayoutConstraint.activate([
             datePicker.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             datePicker.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
         
-        self.view.addSubview(addDate)
+        view.addSubview(addDate)
         NSLayoutConstraint.activate([
             addDate.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             addDate.topAnchor.constraint(equalTo: datePicker.bottomAnchor, constant: 16),

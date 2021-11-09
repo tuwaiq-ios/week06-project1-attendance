@@ -14,7 +14,7 @@ class DaysVC: UIViewController {
     var days: Array<Day> = []
     var studentCount = 0
     
-    var daysTV: UITableView {
+  lazy  var daysTV: UITableView = {
         let tableV = UITableView()
         tableV.translatesAutoresizingMaskIntoConstraints = false
         tableV.delegate = self
@@ -23,7 +23,7 @@ class DaysVC: UIViewController {
         tableV.isHidden = false
         
         return tableV
-    }
+    }()
     
     lazy var addDayButton: UIButton = {
         let button = UIButton()
@@ -37,19 +37,23 @@ class DaysVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(daysTV)
-        daysTV.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        daysTV.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        daysTV.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        daysTV.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        view.reloadInputViews()
         
-                view.addSubview(addDayButton)
-                NSLayoutConstraint.activate([
-                    addDayButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
-                    addDayButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -120),
-                    addDayButton.widthAnchor.constraint(equalToConstant: 100),
-                    addDayButton.heightAnchor.constraint(equalToConstant: 100),
-                ])
+        view.addSubview(daysTV)
+        NSLayoutConstraint.activate([
+            daysTV.leftAnchor.constraint(equalTo: view.leftAnchor),
+            daysTV.topAnchor.constraint(equalTo: view.topAnchor),
+            daysTV.rightAnchor.constraint(equalTo: view.rightAnchor),
+            daysTV.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
+        
+        view.addSubview(addDayButton)
+        NSLayoutConstraint.activate([
+            addDayButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
+            addDayButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -120),
+            addDayButton.widthAnchor.constraint(equalToConstant: 100),
+            addDayButton.heightAnchor.constraint(equalToConstant: 100),
+        ])
         
         DaysService.shared.listenToDays { newDays in
             self.days = newDays
@@ -74,7 +78,7 @@ extension DaysVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: .value1, reuseIdentifier: "DayCell")
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: "dayCell")
         
         let day = days[indexPath.row]
         let presentStudentCount = day.presentStudent.count
@@ -98,5 +102,38 @@ extension DaysVC: UITableViewDelegate, UITableViewDataSource {
         
         present(navigationController, animated: true, completion: nil)
     }
+    
+    
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//
+//
+//        let cell = days[indexPath.row]
+//
+//        let alertcontroller = UIAlertController(title: "Alert"
+//                                                , message: "Are you sure you want to delete all the tasks?"
+//                                                , preferredStyle: UIAlertController.Style.alert
+//        )
+//
+//        alertcontroller.addAction(
+//            UIAlertAction(title: "cancel", style: UIAlertAction.Style.default, handler: { Action in print("...")
+//            })
+//
+//        )
+//
+//        alertcontroller.addAction(
+//            UIAlertAction(title: "Delete", style: UIAlertAction.Style.destructive, handler: { Action in
+//                if editingStyle == .delete {
+//                    self.days.remove(at: indexPath.row)
+//                    self.daysTV.deleteRows(at: [indexPath], with: .fade)
+//                }
+//                self.daysTV.reloadData()
+//            })
+//
+//        )
+//
+//
+//        self.present(alertcontroller, animated: true, completion: nil)
+//
+//    }
     
 }
