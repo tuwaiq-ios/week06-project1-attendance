@@ -2,15 +2,19 @@
 //  DaysViewController.swift
 //  Students Attendance
 //
-//  Created by PC on 01/04/1443 AH.
+// Created by PC on 05/04/1443 AH..
 //
 
 import UIKit
 import Firebase
 
+struct Day {
+    let day : String?
+}
+
 class DaysViewController : UITableViewController, UIPickerViewDelegate {
     
-    static var days = [String]()
+    static var days = [Day]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +35,7 @@ class DaysViewController : UITableViewController, UIPickerViewDelegate {
             if error == nil {
                 for document in snapshot!.documents{
                     let data = document.documentID
-                    DaysViewController.days.append(data)
+                    DaysViewController.days.append(Day(day: data))
                 }
                 self.tableView.reloadData()
                 
@@ -64,7 +68,7 @@ class DaysViewController : UITableViewController, UIPickerViewDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = DaysViewController.days[indexPath.row]
+        cell.textLabel?.text = DaysViewController.days[indexPath.row].day
         cell.selectionStyle = .none
         return cell
     }
@@ -73,6 +77,13 @@ class DaysViewController : UITableViewController, UIPickerViewDelegate {
         let vc = AttendanceViewController()
         vc.selectedDay = DaysViewController.days[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            Firestore.firestore().collection("Days").document(DaysViewController.days[indexPath.row].day!).delete()
+        }
     }
     
 }

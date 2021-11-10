@@ -2,7 +2,7 @@
 //  DatePickerViewController.swift
 //  Students Attendance
 //
-//  Created by PC on 01/04/1443 AH.
+// Created by PC on 05/04/1443 AH..
 //
 
 import UIKit
@@ -40,14 +40,21 @@ class DatePickerViewController : UIViewController {
         dateFormatter.dateFormat = "dd MMM, YYYY"
         let dateString = dateFormatter.string(from: datePicker.date)
 
-        addnewDay(day: dateString)
+        var data : [String : Any] = [:]
+        
+        for i in StudentsViewController.students {
+
+            data.updateValue(["name" : i.name!, "status" : false, "timestamp" : String(Date().timeIntervalSince1970) ], forKey: UUID().uuidString)
+        }
+        
+        addnewDay(day: dateString, data: data)
+        
         self.dismiss(animated: true, completion: nil)
     }
     
     
-    func addnewDay(day : String) {
-//        Firestore.firestore().document("Days/\(day)").setData([:])
-        Firestore.firestore().collection("Days").document(day).setData([:])
+    func addnewDay(day : String, data : [String : Any]) {
+        Firestore.firestore().collection("Days").document(day).setData(data)
     }
     
 }
