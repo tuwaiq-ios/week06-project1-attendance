@@ -42,8 +42,9 @@ class DayAttendanceVC: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        aStudentsLabel.backgroundColor =  UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
-        pStudentsLabel.backgroundColor =  UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+        aStudentsLabel.backgroundColor =  UIColor(red: (95/255), green: (120/255), blue: (113/255), alpha: 1)
+        pStudentsLabel.backgroundColor = UIColor(red: (95/255), green: (120/255), blue: (113/255), alpha: 1)
+     
         aStudentsLabel.font = UIFont.systemFont(ofSize: 22, weight: .regular)
         pStudentsLabel.font = UIFont.systemFont(ofSize: 22, weight: .regular)
         aStudentsLabel.textColor = .white
@@ -113,7 +114,9 @@ extension DayAttendanceVC: UITableViewDataSource, UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Cell3.identifire, for: indexPath) as! Cell3
-        cell.backgroundColor =  UIColor(red: (237/255), green: (242/255), blue: (245/255), alpha: 1)
+        cell.backgroundColor =  UIColor(red: (221/255), green: (237/255), blue: (233/255), alpha: 1)
+        
+     
 		let student = students[indexPath.row]
 		cell.label5.text = student.name
     
@@ -139,6 +142,7 @@ extension DayAttendanceVC: UITableViewDataSource, UITableViewDelegate {
 	}
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
 		let student = students[indexPath.row]
 		
 		DaysVC.shared.switchStudentStatus(

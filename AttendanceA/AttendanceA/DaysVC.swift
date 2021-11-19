@@ -8,6 +8,7 @@ struct Day {
     let timestamp: Timestamp
     var pStudents: Array<String>
     
+    
     func styleDate() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
@@ -15,6 +16,9 @@ struct Day {
         
         return dateFormatter.string(from: timestamp.dateValue())
     }
+    
+    
+    
 }
 class DaysVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
@@ -44,10 +48,12 @@ class DaysVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 		let b = UIButton()
 		b.addTarget(self, action: #selector(AddDay), for: .touchUpInside)
 		b.translatesAutoresizingMaskIntoConstraints = false
-		b.setTitle("Add Day", for: .normal)
-		b.backgroundColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+		b.setTitle("Add Day 🗓", for: .normal)
+		b.backgroundColor = UIColor(red: (142/255), green: (171/255), blue: (162/255), alpha: 1)
         b.layer.cornerRadius = 25
 		return b
+        
+ 
 	}()
 	
 	override func viewDidLoad() {
@@ -105,6 +111,7 @@ class DaysVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let day = days[indexPath.row]
         
         let navigationController = UINavigationController(
@@ -252,8 +259,11 @@ class Cell: UITableViewCell {
  public let label2: UILabel = {
       let label = UILabel()
      label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-      label.textColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+      label.textColor = UIColor(red: (93/255), green: (117/255), blue: (110/255), alpha: 1)
       return label
+     
+
+    
     }()
     
   
@@ -261,7 +271,7 @@ class Cell: UITableViewCell {
          let label = UILabel()
          label.text = "a"
          label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-         label.textColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+         label.textColor = UIColor(red: (142/255), green: (171/255), blue: (162/255), alpha: 1)
  //
          return label
        }()
@@ -270,7 +280,7 @@ class Cell: UITableViewCell {
          let label = UILabel()
          label.text = "b"
         label.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-         label.textColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+         label.textColor = UIColor(red: (142/255), green: (171/255), blue: (162/255), alpha: 1)
 
          return label
        }()

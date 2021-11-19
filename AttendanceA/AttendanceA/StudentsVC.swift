@@ -29,10 +29,10 @@ class StudentsVC: UIViewController, UITextFieldDelegate {
 		let b = UIButton()
 		b.addTarget(self, action: #selector(AddStudent), for: .touchUpInside)
 		b.translatesAutoresizingMaskIntoConstraints = false
-		b.setTitle("Add Student", for: .normal)
+		b.setTitle("Add Student👩🏻‍💻", for: .normal)
         b.layer.cornerRadius = 25
         
-		b.backgroundColor = UIColor(red: (10/255), green: (47/255), blue: (67/255), alpha: 1)
+		b.backgroundColor = UIColor(red: (142/255), green: (171/255), blue: (162/255), alpha: 1)
 		return b
 	}()
     lazy var studentNameTF: UITextField = {
@@ -53,6 +53,8 @@ class StudentsVC: UIViewController, UITextFieldDelegate {
 		}
 //        saveText()
 		tabBarItem = UITabBarItem(title: "Students", image: UIImage(systemName: "person"), selectedImage: nil)
+     
+        
 		view.backgroundColor = .brown
 		
 		view.addSubview(studentsTV)
@@ -142,6 +144,9 @@ class StudentsVC: UIViewController, UITextFieldDelegate {
             completion(students)
         }
     }
+    
+    
+    
     func listenToStudentCount(completion: @escaping ((Int) -> Void)) {
         listenToStudents { students in
             completion(students.count)
@@ -158,7 +163,7 @@ extension StudentsVC: UITableViewDataSource, UITableViewDelegate {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: SCell.identifire, for: indexPath) as! SCell
         
-        cell.backgroundColor =  .red
+ 
 
         cell.label2.text = students[indexPath.row].name
 
